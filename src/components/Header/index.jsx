@@ -1,12 +1,26 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
         <header>
-            <h1>David Horès</h1>
+            <h1>
+                <Link to="/david-hores-portfolio">David Horès</Link>
+            </h1>
             <nav>
                 <ul>
-                    <li>Réalisations</li>
-                    <li>Compétences</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to="/david-hores-portfolio/realisations">
+                            Réalisations
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/david-hores-portfolio/competences">
+                            Compétences
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/david-hores-portfolio/contact">Contact</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
