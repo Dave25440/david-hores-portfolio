@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/david-hores-portfolio/static/css/main.53d24e5a.css",
-    "main.js": "/david-hores-portfolio/static/js/main.9a32d86f.js",
+    "main.css": "/david-hores-portfolio/static/css/main.3b00b478.css",
+    "main.js": "/david-hores-portfolio/static/js/main.e81ea38f.js",
     "index.html": "/david-hores-portfolio/index.html",
-    "main.53d24e5a.css.map": "/david-hores-portfolio/static/css/main.53d24e5a.css.map",
-    "main.9a32d86f.js.map": "/david-hores-portfolio/static/js/main.9a32d86f.js.map"
+    "main.3b00b478.css.map": "/david-hores-portfolio/static/css/main.3b00b478.css.map",
+    "main.e81ea38f.js.map": "/david-hores-portfolio/static/js/main.e81ea38f.js.map"
   },
   "entrypoints": [
-    "static/css/main.53d24e5a.css",
-    "static/js/main.9a32d86f.js"
+    "static/css/main.3b00b478.css",
+    "static/js/main.e81ea38f.js"
   ]
 }
