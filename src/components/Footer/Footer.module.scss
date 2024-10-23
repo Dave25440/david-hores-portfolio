@@ -1,0 +1,9 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 100px 50px 100px;
+    @include mixins.text-style(variables.$color-secondary, 1rem, 400);
+}
