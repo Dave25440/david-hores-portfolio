@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Home.module.scss";
 import About from "../../components/About";
-import Card from "../../components/Card";
+import Project from "../../components/Project";
 
 const Home = () => {
     useEffect(() => {
@@ -23,14 +23,14 @@ const Home = () => {
                             besoins et à ceux de vos utilisateurs.
                         </p>
                     </div>
-                    <Card
+                    <Project
                         id="p5-kasa"
                         title="Kasa"
                         description="Location d'appartements entre particuliers"
                     />
                 </div>
                 <div className={styles.home__bottom}>
-                    <Card
+                    <Project
                         id="formation"
                         title="Formation"
                         description={[
