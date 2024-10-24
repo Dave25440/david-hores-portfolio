@@ -3,10 +3,12 @@
 
 .education {
     background: linear-gradient(#3c8e6d, #214e3c);
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 0 20px;
+    @include mixins.article-style;
     @include mixins.column-flexbox(center);
+
+    &:hover {
+        @include mixins.article-transition;
+    }
 
     &__title {
         @include mixins.text-style(variables.$color-primary, 2rem, 500);

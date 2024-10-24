@@ -1,3 +1,17 @@
+@mixin article-style {
+    position: relative;
+    top: 0;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+@mixin article-transition {
+    top: -10px;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+}
+
 @mixin block-size($width, $height, $radius) {
     width: $width;
     height: $height;

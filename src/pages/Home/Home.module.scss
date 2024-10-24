@@ -28,6 +28,13 @@
     }
 
     &__skill {
+        position: relative;
+        top: 0;
         text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+            @include mixins.article-transition;
+        }
     }
 }

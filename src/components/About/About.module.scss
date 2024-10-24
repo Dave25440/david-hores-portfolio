@@ -5,6 +5,7 @@
     background-color: transparent;
     height: 594px;
     perspective: 1000px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 
     &__inner {
         position: relative;
