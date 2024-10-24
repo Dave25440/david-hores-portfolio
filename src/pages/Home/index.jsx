@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import About from "../../components/About";
 
 const Home = () => {
     useEffect(() => {
@@ -7,9 +8,7 @@ const Home = () => {
 
     return (
         <>
-            <section>
-                <h2>Développeur Web</h2>
-            </section>
+            <About />
         </>
     );
 };
