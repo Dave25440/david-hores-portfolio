@@ -26,4 +26,8 @@
     &__bottom {
         @include mixins.grid(1fr 2fr, auto);
     }
+
+    &__skill {
+        text-decoration: none;
+    }
 }

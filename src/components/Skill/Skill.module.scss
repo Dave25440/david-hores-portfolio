@@ -1,0 +1,30 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.skill {
+    background: linear-gradient(#3c8e6d, #214e3c);
+    height: 100%;
+    border-radius: 10px;
+    padding: 0 20px;
+    @include mixins.column-flexbox(space-around);
+
+    &__title {
+        @include mixins.text-style(variables.$color-primary, 2rem, 500);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        text-align: center;
+        @include mixins.list-style;
+    }
+
+    &__name {
+        @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+}

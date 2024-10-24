@@ -1,13 +1,22 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
 import About from "../../components/About";
 import Project from "../../components/Project";
 import Education from "../../components/Education";
+import Skill from "../../components/Skill";
 
 const Home = () => {
     useEffect(() => {
         document.title = "David Horès, Développeur Web";
     }, []);
+
+    const tools = [
+        { name: "MongoDB", logo: "Logo" },
+        { name: "Express", logo: "Logo" },
+        { name: "React", logo: "Logo" },
+        { name: "Node.js", logo: "Logo" }
+    ];
 
     return (
         <>
@@ -32,6 +41,12 @@ const Home = () => {
                 </div>
                 <div className={styles.home__bottom}>
                     <Education />
+                    <Link
+                        to="/david-hores-portfolio/competences"
+                        className={styles.home__skill}
+                    >
+                        <Skill title="MERN Stack" tools={tools} />
+                    </Link>
                 </div>
             </section>
         </>
