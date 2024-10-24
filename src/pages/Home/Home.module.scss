@@ -2,17 +2,28 @@
 @use "../../styles/_variables";
 
 .home {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 40px;
+    @include mixins.grid(auto, 1fr 1.4fr);
+
+    &__top {
+        @include mixins.grid(3fr 1fr, auto);
+    }
+
+    &__introduction {
+        align-self: center;
+        margin-right: 20px;
+    }
 
     &__title {
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
     }
 
-    &__introduction {
+    &__text {
         text-align: justify;
-        margin: 30px 20px 0 0;
+        margin-top: 30px;
         @include mixins.text-style(variables.$color-secondary, 1.125rem, 400);
+    }
+
+    &__bottom {
+        @include mixins.grid(1fr 2fr, auto);
     }
 }
