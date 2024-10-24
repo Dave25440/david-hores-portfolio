@@ -3,18 +3,17 @@
 
 .card {
     background: linear-gradient(#3c8e6d, #214e3c);
-    text-align: center;
+    text-decoration: none;
     border-radius: 10px;
-    height: 230px;
-    @include mixins.column-flexbox(space-around);
+    padding: 0 20px;
+    @include mixins.column-flexbox(center);
 
     &__title {
-        padding: 0 20px;
-        @include mixins.text-style(variables.$color-primary, 1.75rem, 600);
+        @include mixins.text-style(variables.$color-primary, 2rem, 500);
     }
 
     &__description {
-        padding: 0 20px;
-        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
+        margin-top: 30px;
+        @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
     }
 }
