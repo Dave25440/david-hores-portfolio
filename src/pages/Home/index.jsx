@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import styles from "./Home.module.scss";
 import About from "../../components/About";
 import Project from "../../components/Project";
+import Education from "../../components/Education";
 
 const Home = () => {
     useEffect(() => {
@@ -30,15 +31,7 @@ const Home = () => {
                     />
                 </div>
                 <div className={styles.home__bottom}>
-                    <Project
-                        id="formation"
-                        title="Formation"
-                        description={[
-                            "Développeur Web OpenClassrooms",
-                            <br />,
-                            "Niveau 5"
-                        ]}
-                    />
+                    <Education />
                 </div>
             </section>
         </>
