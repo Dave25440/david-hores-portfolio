@@ -12,6 +12,12 @@
     cursor: pointer;
 }
 
+@mixin column-flexbox($justify) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+}
+
 @mixin list-style {
     list-style: none;
     padding: 0;

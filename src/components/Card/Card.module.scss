@@ -1,0 +1,20 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.card {
+    background: linear-gradient(#3c8e6d, #214e3c);
+    text-align: center;
+    border-radius: 10px;
+    height: 230px;
+    @include mixins.column-flexbox(space-around);
+
+    &__title {
+        padding: 0 20px;
+        @include mixins.text-style(variables.$color-primary, 1.75rem, 600);
+    }
+
+    &__description {
+        padding: 0 20px;
+        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
+    }
+}

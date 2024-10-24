@@ -1,12 +1,10 @@
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
-.about {
-    grid-column: 1;
-}
-
 .home {
-    grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
 
     &__title {
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
