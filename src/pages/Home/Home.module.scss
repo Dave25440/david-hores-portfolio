@@ -24,7 +24,7 @@
     }
 
     &__bottom {
-        @include mixins.grid(1fr 2fr, auto);
+        @include mixins.grid(1fr 3.6fr, auto);
     }
 
     &__skill {

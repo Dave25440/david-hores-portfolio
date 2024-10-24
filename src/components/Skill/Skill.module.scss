@@ -15,7 +15,7 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 80px;
+        gap: 100px;
         text-align: center;
         @include mixins.list-style;
     }
