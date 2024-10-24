@@ -9,7 +9,7 @@
 
     &__title {
         text-decoration: none;
-        @include mixins.text-style(variables.$color-secondary, 6rem, 400);
+        @include mixins.text-style(variables.$color-secondary, 4.5rem, 400);
     }
 
     &__list {
@@ -21,7 +21,7 @@
 
     &__link {
         text-decoration: none;
-        @include mixins.text-style(variables.$color-secondary, 1.5rem, 400);
+        @include mixins.text-style(variables.$color-secondary, 1.25rem, 400);
 
         &:hover {
             text-decoration: underline;
