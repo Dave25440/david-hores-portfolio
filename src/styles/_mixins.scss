@@ -1,3 +1,17 @@
+@mixin block-size($width, $height, $radius) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+@mixin button-style($background, $radius, $padding) {
+    background-color: $background;
+    border: 0;
+    border-radius: $radius;
+    padding: $padding;
+    cursor: pointer;
+}
+
 @mixin list-style {
     list-style: none;
     padding: 0;
