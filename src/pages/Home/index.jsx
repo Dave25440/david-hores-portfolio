@@ -31,7 +31,7 @@ const Home = () => {
                 <Project
                     id="p5-kasa"
                     title="Kasa"
-                    description="Location d'appartements entre particuliers"
+                    subtitle="Location d'appartements entre particuliers"
                 />
             </div>
             <div className={styles.home__bottom}>
