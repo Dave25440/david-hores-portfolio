@@ -1,4 +1,5 @@
 import styles from "./Skill.module.scss";
+import Tool from "../Tool";
 
 const Skill = ({ title, tools }) => {
     return (
@@ -6,10 +7,7 @@ const Skill = ({ title, tools }) => {
             <h3 className={styles.skill__title}>{title}</h3>
             <ul className={styles.skill__list}>
                 {tools.map((tool, index) => (
-                    <li key={index} className={styles.skill__name}>
-                        <p className={styles.skill__logo}>{tool.logo}</p>
-                        {tool.name}
-                    </li>
+                    <Tool key={index} name={tool.name} logo={tool.logo} />
                 ))}
             </ul>
         </article>

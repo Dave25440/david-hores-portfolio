@@ -1,0 +1,10 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.tool {
+    @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
+
+    &__logo {
+        margin-bottom: 30px;
+    }
+}

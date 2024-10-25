@@ -19,12 +19,4 @@
         text-align: center;
         @include mixins.list-style;
     }
-
-    &__name {
-        @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
-    }
-
-    &__logo {
-        margin-bottom: 30px;
-    }
 }
