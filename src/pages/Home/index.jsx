@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
 import About from "../../components/About";
 import Project from "../../components/Project";
-import Education from "../../components/Education";
+import Degree from "../../components/Degree";
 import Skill from "../../components/Skill";
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
                     />
                 </div>
                 <div className={styles.home__bottom}>
-                    <Education />
+                    <Degree />
                     <Link
                         to="/david-hores-portfolio/competences"
                         className={styles.home__skill}
