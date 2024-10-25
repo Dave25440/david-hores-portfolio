@@ -1,0 +1,14 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.career {
+    &__title {
+        @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
+    }
+
+    &__text {
+        text-align: justify;
+        margin-top: 30px;
+        @include mixins.text-style(variables.$color-secondary, 1.125rem, 400);
+    }
+}
