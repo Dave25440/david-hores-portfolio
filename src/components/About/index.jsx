@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./About.module.scss";
+import Links from "../Links";
 
 const About = () => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -24,32 +25,7 @@ const About = () => {
                         <br />
                         Développeur Web
                     </h2>
-                    <ul className={styles.about__list}>
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/dhores/"
-                                className={styles.about__link}
-                            >
-                                linkedin.com/in/dhores
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/Dave25440"
-                                className={styles.about__link}
-                            >
-                                github.com/Dave25440
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="mailto:dhores@ik.me"
-                                className={styles.about__link}
-                            >
-                                dhores@ik.me
-                            </a>
-                        </li>
-                    </ul>
+                    <Links />
                 </div>
                 <div className={styles.about__back}>
                     <button
