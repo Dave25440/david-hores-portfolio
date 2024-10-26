@@ -1,0 +1,9 @@
+@use "../../styles/_mixins";
+
+.skills {
+    @include mixins.grid(2.2fr 1fr, auto);
+
+    &__left {
+        @include mixins.grid(auto, auto);
+    }
+}

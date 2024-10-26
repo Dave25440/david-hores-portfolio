@@ -15,8 +15,13 @@
     &__list {
         display: flex;
         justify-content: center;
-        gap: 100px;
+        gap: 15%;
         text-align: center;
         @include mixins.list-style;
+
+        &--column {
+            flex-direction: column;
+            gap: 40px;
+        }
     }
 }
