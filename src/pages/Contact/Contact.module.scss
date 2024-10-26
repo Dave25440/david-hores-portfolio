@@ -1,0 +1,8 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.contact {
+    &__title {
+        @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
+    }
+}

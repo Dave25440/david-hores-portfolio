@@ -3,6 +3,7 @@ import Layout from "../Layout";
 import Home from "../../pages/Home";
 import Projects from "../../pages/Projects";
 import Skills from "../../pages/Skills";
+import Contact from "../../pages/Contact";
 import Career from "../../pages/Career";
 import Error from "../Error";
 
@@ -19,6 +20,10 @@ const AppRouter = () => {
                     <Route
                         path="/david-hores-portfolio/competences"
                         element={<Skills />}
+                    />
+                    <Route
+                        path="/david-hores-portfolio/contact"
+                        element={<Contact />}
                     />
                     <Route
                         path="/david-hores-portfolio/formation"
