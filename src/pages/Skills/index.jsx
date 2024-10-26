@@ -133,11 +133,16 @@ const Skills = () => {
         }
     ];
 
-    const toolsCategories = tools
-        .sort((a, b) => a.category.order - b.category.order)
-        .map((tool) => tool.category.title);
-    const uniqueCategories = new Set(toolsCategories);
-    const categories = Array.from(uniqueCategories);
+    const sortedTools = tools.sort(
+        (a, b) => a.category.order - b.category.order || a.order - b.order
+    );
+    const categories = Array.from(
+        new Set(sortedTools.map((tool) => tool.category.title))
+    );
+    const categoryTools = (category) =>
+        sortedTools
+            .filter((tool) => tool.category.title === category)
+            .slice(0, 4);
 
     return (
         <section className={styles.skills}>
@@ -146,10 +151,7 @@ const Skills = () => {
                     <Skill
                         key={index}
                         title={category}
-                        tools={tools
-                            .filter((tool) => tool.category.title === category)
-                            .slice(0, 4)
-                            .sort((a, b) => a.order - b.order)}
+                        tools={categoryTools(category)}
                     />
                 ))}
             </div>
@@ -157,10 +159,7 @@ const Skills = () => {
                 <Skill
                     key={index}
                     title={category}
-                    tools={tools
-                        .filter((tool) => tool.category.title === category)
-                        .slice(0, 4)
-                        .sort((a, b) => a.order - b.order)}
+                    tools={categoryTools(category)}
                     listClass="skill__list--column"
                 />
             ))}
