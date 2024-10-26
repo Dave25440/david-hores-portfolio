@@ -68,6 +68,7 @@ const Projects = () => {
         <section className={styles.projects}>
             {projects
                 .sort((a, b) => a.order - b.order)
+                .slice(0, 6)
                 .map((project) => (
                     <Project key={project.id} {...project} />
                 ))}

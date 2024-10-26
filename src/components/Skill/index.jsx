@@ -10,8 +10,8 @@ const Skill = ({ title, tools, listClass }) => {
                     listClass && styles[listClass]
                 }`}
             >
-                {tools.map((tool, index) => (
-                    <Tool key={index} title={tool.title} logo={tool.logo} />
+                {tools.map((tool) => (
+                    <Tool key={tool.id} title={tool.title} logo={tool.logo} />
                 ))}
             </ul>
         </article>
