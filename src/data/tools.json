@@ -55,7 +55,7 @@
         "category": {
             "title": "Back-end",
             "order": 2,
-            "mern": true
+            "mern": 4
         },
         "logo": "Logo",
         "order": 5
@@ -75,7 +75,8 @@
         "title": "React",
         "category": {
             "title": "Front-end",
-            "order": 1
+            "order": 1,
+            "mern": 3
         },
         "logo": "Logo",
         "order": 1
@@ -96,7 +97,7 @@
         "category": {
             "title": "Back-end",
             "order": 2,
-            "mern": true
+            "mern": 2
         },
         "logo": "Logo",
         "order": 6
@@ -107,7 +108,7 @@
         "category": {
             "title": "Back-end",
             "order": 2,
-            "mern": true
+            "mern": 1
         },
         "logo": "Logo",
         "order": 8

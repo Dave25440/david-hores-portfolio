@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
+import projects from "../../data/projects.json";
+import tools from "../../data/tools.json";
 import Project from "../../components/Project";
 import Degree from "../../components/Degree";
 import Skill from "../../components/Skill";
@@ -10,12 +12,9 @@ const Home = () => {
         document.title = "David Horès, Développeur Web";
     }, []);
 
-    const tools = [
-        { title: "MongoDB", logo: "Logo" },
-        { title: "Express", logo: "Logo" },
-        { title: "React", logo: "Logo" },
-        { title: "Node.js", logo: "Logo" }
-    ];
+    const mernTools = tools
+        .filter((tool) => tool.category.mern)
+        .sort((a, b) => a.category.mern - b.category.mern);
 
     return (
         <section className={styles.home}>
@@ -28,11 +27,12 @@ const Home = () => {
                         ceux de vos utilisateurs.
                     </p>
                 </div>
-                <Project
-                    id="p5-kasa"
-                    title="Kasa"
-                    subtitle="Location d'appartements entre particuliers"
-                />
+                {projects.map(
+                    (project) =>
+                        project.order === 1 && (
+                            <Project key={project.id} {...project} />
+                        )
+                )}
             </div>
             <div className={styles.home__bottom}>
                 <Degree />
@@ -40,7 +40,7 @@ const Home = () => {
                     to="/david-hores-portfolio/competences"
                     className={styles.home__skill}
                 >
-                    <Skill title="MERN Stack" tools={tools} />
+                    <Skill title="MERN Stack" tools={mernTools} />
                 </Link>
             </div>
         </section>
