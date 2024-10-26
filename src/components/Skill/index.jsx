@@ -7,7 +7,7 @@ const Skill = ({ title, tools }) => {
             <h3 className={styles.skill__title}>{title}</h3>
             <ul className={styles.skill__list}>
                 {tools.map((tool, index) => (
-                    <Tool key={index} name={tool.name} logo={tool.logo} />
+                    <Tool key={index} title={tool.title} logo={tool.logo} />
                 ))}
             </ul>
         </article>

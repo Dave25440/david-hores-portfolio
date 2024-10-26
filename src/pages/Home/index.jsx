@@ -11,10 +11,10 @@ const Home = () => {
     }, []);
 
     const tools = [
-        { name: "MongoDB", logo: "Logo" },
-        { name: "Express", logo: "Logo" },
-        { name: "React", logo: "Logo" },
-        { name: "Node.js", logo: "Logo" }
+        { title: "MongoDB", logo: "Logo" },
+        { title: "Express", logo: "Logo" },
+        { title: "React", logo: "Logo" },
+        { title: "Node.js", logo: "Logo" }
     ];
 
     return (
