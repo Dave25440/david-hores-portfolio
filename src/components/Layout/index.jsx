@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Header />
-            <main className={isMatch && styles.main}>
+            <main className={`${styles.main} ${isMatch && styles.main__grid}`}>
                 {isMatch && <About />}
                 {children}
             </main>

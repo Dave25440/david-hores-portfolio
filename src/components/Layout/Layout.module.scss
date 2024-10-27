@@ -1,5 +1,7 @@
 @use "../../styles/_mixins";
 
 .main {
-    @include mixins.grid(1fr 2.4fr, auto);
+    &__grid {
+        @include mixins.grid(1fr 2.4fr, auto);
+    }
 }
