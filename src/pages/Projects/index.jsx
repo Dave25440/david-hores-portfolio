@@ -10,12 +10,9 @@ const Projects = () => {
 
     return (
         <section className={styles.projects}>
-            {projects
-                .sort((a, b) => a.order - b.order)
-                .slice(0, 6)
-                .map((project) => (
-                    <Card key={project.id} {...project} />
-                ))}
+            {projects.slice(0, 6).map((project) => (
+                <Card key={project.id} {...project} />
+            ))}
         </section>
     );
 };

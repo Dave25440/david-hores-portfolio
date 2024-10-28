@@ -26,12 +26,7 @@ const Home = () => {
                         ceux de vos utilisateurs.
                     </p>
                 </div>
-                {projects.map(
-                    (project) =>
-                        project.order === 1 && (
-                            <Card key={project.id} {...project} />
-                        )
-                )}
+                <Card {...projects[0]} />
             </div>
             <div className={styles.home__bottom}>
                 <Card
