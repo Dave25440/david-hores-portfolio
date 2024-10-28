@@ -4,7 +4,6 @@ import styles from "./Home.module.scss";
 import projects from "../../data/projects.json";
 import tools from "../../data/tools.json";
 import Project from "../../components/Project";
-import Degree from "../../components/Degree";
 import Skill from "../../components/Skill";
 
 const Home = () => {
@@ -35,7 +34,16 @@ const Home = () => {
                 )}
             </div>
             <div className={styles.home__bottom}>
-                <Degree />
+                <Project
+                    title="Formation"
+                    subtitle={
+                        <>
+                            Développeur Web OpenClassrooms
+                            <br />
+                            Niveau 5
+                        </>
+                    }
+                />
                 <Link
                     to="/david-hores-portfolio/competences"
                     className={styles.home__skill}

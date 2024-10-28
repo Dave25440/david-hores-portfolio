@@ -4,7 +4,11 @@ import styles from "./Project.module.scss";
 const Project = ({ id, title, subtitle }) => {
     return (
         <Link
-            to={`/david-hores-portfolio/realisations/${id}`}
+            to={
+                id
+                    ? `/david-hores-portfolio/realisations/${id}`
+                    : `/david-hores-portfolio/formation`
+            }
             className={styles.project}
         >
             <article>
