@@ -11,7 +11,7 @@ const Skill = ({ title, tools, listClass }) => {
                 }`}
             >
                 {tools.map((tool) => (
-                    <Tool key={tool.id} title={tool.title} logo={tool.logo} />
+                    <Tool key={tool.id} {...tool} />
                 ))}
             </ul>
         </article>
