@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
 import projects from "../../data/projects.json";
 import tools from "../../data/tools.json";
-import Project from "../../components/Project";
+import Card from "../../components/Card";
 import Skill from "../../components/Skill";
 
 const Home = () => {
@@ -29,12 +29,12 @@ const Home = () => {
                 {projects.map(
                     (project) =>
                         project.order === 1 && (
-                            <Project key={project.id} {...project} />
+                            <Card key={project.id} {...project} />
                         )
                 )}
             </div>
             <div className={styles.home__bottom}>
-                <Project
+                <Card
                     title="Formation"
                     subtitle={
                         <>

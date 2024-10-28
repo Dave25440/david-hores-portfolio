@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import styles from "./Project.module.scss";
+import styles from "./Card.module.scss";
 
-const Project = ({ id, title, subtitle }) => {
+const Card = ({ id, title, subtitle }) => {
     return (
         <Link
             to={
@@ -9,14 +9,14 @@ const Project = ({ id, title, subtitle }) => {
                     ? `/david-hores-portfolio/realisations/${id}`
                     : `/david-hores-portfolio/formation`
             }
-            className={styles.project}
+            className={styles.card}
         >
             <article>
-                <h3 className={styles.project__title}>{title}</h3>
-                <p className={styles.project__subtitle}>{subtitle}</p>
+                <h3 className={styles.card__title}>{title}</h3>
+                <p className={styles.card__subtitle}>{subtitle}</p>
             </article>
         </Link>
     );
 };
 
-export default Project;
+export default Card;

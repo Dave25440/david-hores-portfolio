@@ -1,7 +1,7 @@
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
-.project {
+.card {
     background: linear-gradient(#3c8e6d, #214e3c);
     @include mixins.article-style;
     @include mixins.column-flexbox(center);

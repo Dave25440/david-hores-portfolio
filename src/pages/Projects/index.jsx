@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Projects.module.scss";
 import projects from "../../data/projects.json";
-import Project from "../../components/Project";
+import Card from "../../components/Card";
 
 const Projects = () => {
     useEffect(() => {
@@ -14,7 +14,7 @@ const Projects = () => {
                 .sort((a, b) => a.order - b.order)
                 .slice(0, 6)
                 .map((project) => (
-                    <Project key={project.id} {...project} />
+                    <Card key={project.id} {...project} />
                 ))}
         </section>
     );
