@@ -4,18 +4,19 @@ import Header from "../Header";
 import About from "../About";
 import Footer from "../Footer";
 
+const paths = [
+    "/david-hores-portfolio",
+    "/david-hores-portfolio/realisations",
+    "/david-hores-portfolio/competences",
+    "/david-hores-portfolio/contact",
+    "/david-hores-portfolio/formation"
+];
+
+const pathMatch = (pathname) => paths.includes(pathname.replace(/\/$/, ""));
+
 const Layout = ({ children }) => {
     const location = useLocation();
-    const paths = [
-        "/david-hores-portfolio",
-        "/david-hores-portfolio/realisations",
-        "/david-hores-portfolio/competences",
-        "/david-hores-portfolio/contact",
-        "/david-hores-portfolio/formation"
-    ];
-
-    const currentPath = location.pathname.replace(/\/$/, "");
-    const isMatch = paths.includes(currentPath);
+    const isMatch = pathMatch(location.pathname);
 
     return (
         <>
