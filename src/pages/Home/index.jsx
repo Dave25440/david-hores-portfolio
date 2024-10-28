@@ -6,14 +6,14 @@ import tools from "../../data/tools.json";
 import Card from "../../components/Card";
 import Skill from "../../components/Skill";
 
+const mernTools = tools
+    .filter((tool) => tool.mern)
+    .sort((a, b) => a.mern - b.mern);
+
 const Home = () => {
     useEffect(() => {
         document.title = "David Horès, Développeur Web";
     }, []);
-
-    const mernTools = tools
-        .filter((tool) => tool.category.mern)
-        .sort((a, b) => a.category.mern - b.category.mern);
 
     return (
         <section className={styles.home}>

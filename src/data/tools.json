@@ -1,126 +1,78 @@
 [
     {
-        "id": "t1-chatgpt",
-        "title": "ChatGPT",
-        "category": {
-            "title": "Outils",
-            "order": 3
-        },
-        "logo": "Logo",
-        "order": 12
-    },
-    {
-        "id": "t2-git-github",
-        "title": "Git et GitHub",
-        "category": {
-            "title": "Outils",
-            "order": 3
-        },
-        "logo": "Logo",
-        "order": 9
-    },
-    {
-        "id": "t3-figma",
-        "title": "Figma",
-        "category": {
-            "title": "Outils",
-            "order": 3
-        },
-        "logo": "Logo",
-        "order": 11
-    },
-    {
-        "id": "t4-html-css",
-        "title": "HTML et CSS",
-        "category": {
-            "title": "Front-end",
-            "order": 1
-        },
-        "logo": "Logo",
-        "order": 4
-    },
-    {
-        "id": "t5-javascript",
-        "title": "JavaScript",
-        "category": {
-            "title": "Front-end",
-            "order": 1
-        },
-        "logo": "Logo",
-        "order": 3
-    },
-    {
-        "id": "t6-nodejs",
-        "title": "Node.js",
-        "category": {
-            "title": "Back-end",
-            "order": 2,
-            "mern": 4
-        },
-        "logo": "Logo",
-        "order": 5
-    },
-    {
-        "id": "t7-nosql",
-        "title": "NoSQL",
-        "category": {
-            "title": "Back-end",
-            "order": 2
-        },
-        "logo": "Logo",
-        "order": 7
-    },
-    {
         "id": "t8-react",
         "title": "React",
-        "category": {
-            "title": "Front-end",
-            "order": 1,
-            "mern": 3
-        },
+        "category": "Front-end",
         "logo": "Logo",
-        "order": 1
+        "mern": 3
     },
     {
         "id": "t9-sass",
         "title": "Sass",
-        "category": {
-            "title": "Front-end",
-            "order": 1
-        },
+        "category": "Front-end",
+        "logo": "Logo"
+    },
+    {
+        "id": "t5-javascript",
+        "title": "JavaScript",
+        "category": "Front-end",
+        "logo": "Logo"
+    },
+    {
+        "id": "t4-html-css",
+        "title": "HTML et CSS",
+        "category": "Front-end",
+        "logo": "Logo"
+    },
+    {
+        "id": "t6-nodejs",
+        "title": "Node.js",
+        "category": "Back-end",
         "logo": "Logo",
-        "order": 2
+        "mern": 4
     },
     {
         "id": "t10-express",
         "title": "Express",
-        "category": {
-            "title": "Back-end",
-            "order": 2,
-            "mern": 2
-        },
+        "category": "Back-end",
         "logo": "Logo",
-        "order": 6
+        "mern": 2
+    },
+    {
+        "id": "t7-nosql",
+        "title": "NoSQL",
+        "category": "Back-end",
+        "logo": "Logo"
     },
     {
         "id": "t11-mongodb",
         "title": "MongoDB",
-        "category": {
-            "title": "Back-end",
-            "order": 2,
-            "mern": 1
-        },
+        "category": "Back-end",
         "logo": "Logo",
-        "order": 8
+        "mern": 1
+    },
+    {
+        "id": "t2-git-github",
+        "title": "Git et GitHub",
+        "category": "Outils",
+        "logo": "Logo"
     },
     {
         "id": "t12-scrum",
         "title": "Scrum",
-        "category": {
-            "title": "Outils",
-            "order": 3
-        },
-        "logo": "Logo",
-        "order": 10
+        "category": "Outils",
+        "logo": "Logo"
+    },
+    {
+        "id": "t3-figma",
+        "title": "Figma",
+        "category": "Outils",
+        "logo": "Logo"
+    },
+    {
+        "id": "t1-chatgpt",
+        "title": "ChatGPT",
+        "category": "Outils",
+        "logo": "Logo"
     }
 ]
