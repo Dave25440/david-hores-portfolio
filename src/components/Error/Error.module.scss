@@ -9,7 +9,7 @@
     }
 
     &__text {
-        margin: 93px 0;
+        padding: 93px 0;
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 400);
     }
 }
