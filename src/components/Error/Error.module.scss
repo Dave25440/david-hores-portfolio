@@ -1,0 +1,15 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.error {
+    text-align: center;
+
+    &__title {
+        @include mixins.text-style(variables.$color-secondary, 18rem, 500);
+    }
+
+    &__text {
+        margin: 93px 0;
+        @include mixins.text-style(variables.$color-secondary, 2.25rem, 400);
+    }
+}
