@@ -23,14 +23,11 @@ const Skills = () => {
                     />
                 ))}
             </div>
-            {toolCategories.slice(2, 3).map((category) => (
-                <Skill
-                    key={category.id}
-                    title={category.title}
-                    tools={categoryTools(category.title)}
-                    listClass="skill__list--column"
-                />
-            ))}
+            <Skill
+                title={toolCategories[2].title}
+                tools={categoryTools(toolCategories[2].title)}
+                listClass="skill__list--column"
+            />
         </section>
     );
 };
