@@ -34,7 +34,7 @@
         transition: all 0.3s;
 
         &:hover {
-            @include mixins.article-transition;
+            @include mixins.card-transition;
         }
     }
 }

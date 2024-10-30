@@ -3,11 +3,11 @@
 
 .card {
     background: linear-gradient(#3c8e6d, #214e3c);
-    @include mixins.article-style;
+    @include mixins.card-style(0 20px);
     @include mixins.column-flexbox(center);
 
     &:hover {
-        @include mixins.article-transition;
+        @include mixins.card-transition;
     }
 
     &__title {
