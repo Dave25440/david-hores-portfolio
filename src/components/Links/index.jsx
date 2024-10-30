@@ -12,7 +12,11 @@ const Links = ({
             url: "https://github.com/Dave25440",
             logo: "Logo"
         },
-        { title: "dhores@ik.me", url: "mailto:dhores@ik.me", logo: "Logo" }
+        {
+            title: "hores.d@gmail.com",
+            url: "mailto:hores.d@gmail.com",
+            logo: "Logo"
+        }
     ]
 }) => {
     return (
