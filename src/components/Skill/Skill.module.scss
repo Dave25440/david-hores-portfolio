@@ -12,7 +12,7 @@
         @include mixins.text-style(variables.$color-primary, 2rem, 500);
     }
 
-    &__list {
+    &__tools {
         display: flex;
         justify-content: center;
         gap: 15%;

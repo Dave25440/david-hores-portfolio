@@ -26,7 +26,7 @@ const Skills = () => {
             <Skill
                 title={toolCategories[2].title}
                 tools={categoryTools(toolCategories[2].title)}
-                listClass="skill__list--column"
+                column
             />
         </section>
     );

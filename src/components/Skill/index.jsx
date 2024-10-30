@@ -1,13 +1,13 @@
 import styles from "./Skill.module.scss";
 import Tool from "../Tool";
 
-const Skill = ({ title, tools, listClass }) => {
+const Skill = ({ title, tools, column }) => {
     return (
         <article className={styles.skill}>
             <h3 className={styles.skill__title}>{title}</h3>
             <ul
-                className={`${styles.skill__list} ${
-                    listClass && styles[listClass]
+                className={`${styles.skill__tools} ${
+                    column && styles["skill__tools--column"]
                 }`}
             >
                 {tools.map((tool) => (
