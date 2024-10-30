@@ -1,0 +1,33 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.project {
+    @include mixins.grid(1fr 2.4fr, auto);
+
+    &__section {
+        @include mixins.grid(auto, 1fr 1.4fr);
+    }
+
+    &__top {
+        @include mixins.grid(2.2fr 1fr, auto);
+    }
+
+    &__introduction {
+        align-self: center;
+        margin-right: 20px;
+    }
+
+    &__title {
+        @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
+    }
+
+    &__text {
+        text-align: justify;
+        margin-top: 30px;
+        @include mixins.text-style(variables.$color-secondary, 1.125rem, 400);
+    }
+
+    &__bottom {
+        @include mixins.grid(repeat(2, 1fr), auto);
+    }
+}
