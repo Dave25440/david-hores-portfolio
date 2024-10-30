@@ -2,6 +2,8 @@
 @use "../../styles/_variables";
 
 .contact {
+    @include mixins.column-flexbox(space-between);
+
     &__title {
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
     }
