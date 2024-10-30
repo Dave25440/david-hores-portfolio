@@ -1,29 +1,29 @@
 import styles from "./Links.module.scss";
 
-const Links = () => {
+const Links = ({
+    links = [
+        {
+            title: "David Horès",
+            url: "https://www.linkedin.com/in/dhores/",
+            logo: "Logo"
+        },
+        {
+            title: "Dave25440",
+            url: "https://github.com/Dave25440",
+            logo: "Logo"
+        },
+        { title: "dhores@ik.me", url: "mailto:dhores@ik.me", logo: "Logo" }
+    ]
+}) => {
     return (
         <ul className={styles.links}>
-            <li>
-                <a
-                    href="https://www.linkedin.com/in/dhores/"
-                    className={styles.links__link}
-                >
-                    linkedin.com/in/dhores
-                </a>
-            </li>
-            <li>
-                <a
-                    href="https://github.com/Dave25440"
-                    className={styles.links__link}
-                >
-                    github.com/Dave25440
-                </a>
-            </li>
-            <li>
-                <a href="mailto:dhores@ik.me" className={styles.links__link}>
-                    dhores@ik.me
-                </a>
-            </li>
+            {links.map((link, index) => (
+                <li key={index}>
+                    <a href={link.url} className={styles.links__link}>
+                        {link.title}
+                    </a>
+                </li>
+            ))}
         </ul>
     );
 };

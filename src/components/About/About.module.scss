@@ -54,8 +54,13 @@
     }
 
     &__title {
-        padding-left: 20px;
-        @include mixins.text-style(variables.$color-primary, 2.25rem, 400);
+        padding: 0 20px;
+        @include mixins.text-style(variables.$color-primary, 2.25rem, 500);
+    }
+
+    &__subtitle {
+        padding: 0 20px;
+        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
     }
 
     &__text {

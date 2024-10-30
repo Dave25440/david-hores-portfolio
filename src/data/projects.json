@@ -3,42 +3,140 @@
         "id": "p5-kasa",
         "title": "Kasa",
         "subtitle": "Location d'appartements entre particuliers",
+        "links": [
+            {
+                "title": "Démo du site",
+                "url": "https://dave25440.github.io/oc-p5-kasa",
+                "logo": "Logo"
+            },
+            {
+                "title": "Dépôt du code source",
+                "url": "https://github.com/Dave25440/OpenClassrooms-P5-Kasa",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "https://www.canva.com/design/DAGMiA4CKc8/t8YDceUcpH_LzK7D2hD4ew/view?utm_content=DAGMiA4CKc8&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": "p4-nina-carducci",
         "title": "Nina Carducci",
         "subtitle": "Site vitrine de photographe",
+        "links": [
+            {
+                "title": "Démo du site",
+                "url": "https://dave25440.github.io/OpenClassrooms-P4-Carducci",
+                "logo": "Logo"
+            },
+            {
+                "title": "Dépôt du code source",
+                "url": "https://github.com/Dave25440/OpenClassrooms-P4-Carducci",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "https://www.canva.com/design/DAGJT47Teqo/X6ppmZKGFKlpig9tpc2E5g/view?utm_content=DAGJT47Teqo&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": "p2-booki",
         "title": "Booki",
         "subtitle": "Hébergements et activités en ville ou en pleine nature",
+        "links": [
+            {
+                "title": "Démo du site",
+                "url": "https://dave25440.github.io/OpenClassrooms-P2-Booki/",
+                "logo": "Logo"
+            },
+            {
+                "title": "Dépôt du code source",
+                "url": "https://github.com/Dave25440/OpenClassrooms-P2-Booki",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "https://www.canva.com/design/DAGDaC-nDas/458Bc_elndDrJRq4XF_ybA/view?utm_content=DAGDaC-nDas&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": "p6-mon-vieux-grimoire",
         "title": "Mon Vieux Grimoire",
         "subtitle": "Référencement et notation de livres",
+        "links": [
+            {
+                "title": "Dépôt du code source",
+                "url": "https://github.com/Dave25440/OpenClassrooms-P6-Grimoire",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "https://www.canva.com/design/DAGPOHazavs/iR2DTNHzqnAMLldHLOrM_w/view?utm_content=DAGPOHazavs&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": "p3-sophie-bluel",
         "title": "Sophie Bluel",
         "subtitle": "Site portfolio d'architecte d'intérieur",
+        "links": [
+            {
+                "title": "Dépôt du code source",
+                "url": "https://github.com/Dave25440/OpenClassrooms-P3-Portfolio-Bluel-v2",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "https://www.canva.com/design/DAGGyFetwV0/Ue0kzx9A5do8_OUbbF7UTg/view?utm_content=DAGGyFetwV0&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
         "id": "p7-menu-maker-by-qwenta",
         "title": "Menu Maker by Qwenta",
         "subtitle": "Affichage et mise en page de menus pour restaurateurs",
+        "links": [
+            {
+                "title": "Spécifications techniques",
+                "url": "../oc_p7_qwenta_specifications_techniques.pdf",
+                "logo": "Logo"
+            },
+            {
+                "title": "Tableau Kanban",
+                "url": "https://paint-trowel-ab3.notion.site/11835b4089c9804c8072fd09f26e1e80?v=11835b4089c98161ae98000cf7525ca6",
+                "logo": "Logo"
+            },
+            {
+                "title": "Présentation du projet",
+                "url": "../oc_p7_qwenta_presentation.pdf",
+                "logo": "Logo"
+            }
+        ],
         "logo": "Logo",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
 ]
