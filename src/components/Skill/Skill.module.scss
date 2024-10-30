@@ -24,4 +24,11 @@
             gap: 40px;
         }
     }
+
+    &__skills {
+        gap: 20px;
+        @include mixins.column-flexbox(flex-start);
+        @include mixins.list-style;
+        @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
+    }
 }

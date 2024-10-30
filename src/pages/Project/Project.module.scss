@@ -2,14 +2,10 @@
 @use "../../styles/_variables";
 
 .project {
-    @include mixins.grid(1fr 2.4fr, auto);
+    @include mixins.grid(1fr 1.3fr 1fr, auto);
 
-    &__section {
+    &__left {
         @include mixins.grid(auto, 1fr 1.4fr);
-    }
-
-    &__top {
-        @include mixins.grid(2.2fr 1fr, auto);
     }
 
     &__introduction {
@@ -25,9 +21,5 @@
         text-align: justify;
         margin-top: 30px;
         @include mixins.text-style(variables.$color-secondary, 1.125rem, 400);
-    }
-
-    &__bottom {
-        @include mixins.grid(repeat(2, 1fr), auto);
     }
 }

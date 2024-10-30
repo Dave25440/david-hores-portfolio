@@ -20,9 +20,14 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     },
     {
         "id": "p4-nina-carducci",
@@ -45,9 +50,14 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     },
     {
         "id": "p2-booki",
@@ -70,9 +80,14 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     },
     {
         "id": "p6-mon-vieux-grimoire",
@@ -90,9 +105,14 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     },
     {
         "id": "p3-sophie-bluel",
@@ -110,9 +130,14 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     },
     {
         "id": "p7-menu-maker-by-qwenta",
@@ -135,8 +160,13 @@
                 "logo": "Logo"
             }
         ],
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "skills": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
     }
 ]
