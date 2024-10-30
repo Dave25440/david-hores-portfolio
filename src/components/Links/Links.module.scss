@@ -8,7 +8,7 @@
     @include mixins.list-style;
 
     &__link {
-        display: block;
+        display: inline-block;
         text-decoration: none;
         padding: 15px 20px;
         @include mixins.text-style(#3c8e6d, 1rem, 400);
