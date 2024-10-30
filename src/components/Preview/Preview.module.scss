@@ -1,0 +1,15 @@
+@use "../../styles/_mixins";
+
+.preview {
+    background: linear-gradient(#3c8e6d, #214e3c);
+    @include mixins.card-style(0);
+
+    &:hover {
+        @include mixins.card-transition;
+    }
+
+    &__img {
+        object-fit: cover;
+        @include mixins.block-size(100%, 100%, 10px);
+    }
+}

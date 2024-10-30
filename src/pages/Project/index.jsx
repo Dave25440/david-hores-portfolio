@@ -4,6 +4,7 @@ import styles from "./Project.module.scss";
 import projects from "../../data/projects.json";
 import About from "../../components/About";
 import Skill from "../../components/Skill";
+import Preview from "../../components/Preview";
 
 const Project = () => {
     const { id } = useParams();
@@ -31,6 +32,7 @@ const Project = () => {
                     </div>
                     <Skill title="Compétences" skills={project.skills} />
                 </div>
+                <Preview {...project} />
             </section>
         )
     );

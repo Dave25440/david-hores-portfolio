@@ -27,7 +27,8 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p5_kasa.jpg"
     },
     {
         "id": "p4-nina-carducci",
@@ -57,7 +58,8 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p4_carducci.jpg"
     },
     {
         "id": "p2-booki",
@@ -87,7 +89,8 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p2_booki.jpg"
     },
     {
         "id": "p6-mon-vieux-grimoire",
@@ -112,7 +115,8 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p6_grimoire.jpg"
     },
     {
         "id": "p3-sophie-bluel",
@@ -137,7 +141,8 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p6_bluel.jpg"
     },
     {
         "id": "p7-menu-maker-by-qwenta",
@@ -167,6 +172,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        ]
+        ],
+        "picture": "oc_p7_qwenta.jpg"
     }
 ]
