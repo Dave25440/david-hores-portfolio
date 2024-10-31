@@ -38,7 +38,15 @@
         transform: rotateY(180deg);
     }
 
+    &__top {
+        background-color: variables.$color-secondary;
+        @include mixins.block-size(100%, 40%, 10px 10px 50% 50%);
+        @include mixins.column-flexbox(flex-start);
+    }
+
     &__button {
+        align-self: flex-start;
+        transition: all 0.3s;
         @include mixins.button-style(
             variables.$color-background,
             (10px 0),
@@ -47,15 +55,22 @@
         @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
 
         &:hover {
-            text-decoration: underline;
+            border-radius: 0 0 10px 10px;
+            margin-left: 10px;
         }
     }
 
     &__photo {
-        padding: 20px;
+        align-self: center;
+        position: relative;
+        top: 10px;
+        background-color: variables.$color-primary;
+        border-radius: 50%;
+        padding: 10px;
     }
 
     &__title {
+        margin-top: 30px;
         padding: 0 20px;
         @include mixins.text-style(variables.$color-background, 2.25rem, 500);
     }

@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./About.module.scss";
 import Links from "../Links";
 
+const photo = require("../../assets/david_hores.webp");
+
 const About = ({
     project,
     title = "Je suis David, Développeur Web",
@@ -11,6 +13,7 @@ const About = ({
 }) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const flipCard = () => setIsFlipped((prev) => !prev);
+    const src = photo;
 
     return (
         <article className={styles.about}>
@@ -20,10 +23,21 @@ const About = ({
                 }`}
             >
                 <div className={styles.about__front}>
-                    <button className={styles.about__button} onClick={flipCard}>
-                        À propos &rarr;
-                    </button>
-                    {!project && <p className={styles.about__photo}>Photo</p>}
+                    <div className={styles.about__top}>
+                        <button
+                            className={styles.about__button}
+                            onClick={flipCard}
+                        >
+                            À propos &rarr;
+                        </button>
+                        {!project && (
+                            <img
+                                src={src}
+                                alt="David Horès"
+                                className={styles.about__photo}
+                            />
+                        )}
+                    </div>
                     <h2 className={styles.about__title}>{title}</h2>
                     {subtitle && (
                         <h3 className={styles.about__subtitle}>{subtitle}</h3>
