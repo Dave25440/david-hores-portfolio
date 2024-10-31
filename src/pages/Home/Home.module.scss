@@ -1,3 +1,4 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
@@ -11,15 +12,18 @@
     &__introduction {
         align-self: center;
         margin-right: 20px;
+        overflow: hidden;
     }
 
     &__title {
+        animation: slideToRight 0.4s ease-out;
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
     }
 
     &__text {
         text-align: justify;
         margin-top: 30px;
+        animation: slideToRight 0.6s ease-out;
         @include mixins.text-style(variables.$color-secondary, 1.125rem, 400);
     }
 

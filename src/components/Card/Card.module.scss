@@ -1,8 +1,10 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
 .card {
     background: linear-gradient(#3c8e6d, #214e3c);
+    animation: zoomIn 0.4s;
     @include mixins.card-style(0 20px);
     @include mixins.column-flexbox(center);
 

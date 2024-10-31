@@ -1,10 +1,13 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
 .contact {
+    overflow: hidden;
     @include mixins.column-flexbox(space-between);
 
     &__title {
+        animation: slideToRight 0.4s ease;
         @include mixins.text-style(variables.$color-secondary, 2.25rem, 500);
     }
 }

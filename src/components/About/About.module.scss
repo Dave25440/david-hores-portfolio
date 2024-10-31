@@ -1,3 +1,4 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
@@ -9,6 +10,7 @@
 
     &__inner {
         position: relative;
+        animation: rotateIn 0.4s ease-in;
         transform-style: preserve-3d;
         transition: transform 0.6s;
         @include mixins.block-size(100%, 100%, 10px);

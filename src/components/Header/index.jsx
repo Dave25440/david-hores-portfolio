@@ -4,10 +4,10 @@ import styles from "./Header.module.scss";
 const Header = () => {
     return (
         <header className={styles.header}>
-            <h1>
+            <h1 className={styles.header__title}>
                 <Link
                     to="/david-hores-portfolio"
-                    className={styles.header__title}
+                    className={styles.header__home}
                 >
                     David Horès
                 </Link>

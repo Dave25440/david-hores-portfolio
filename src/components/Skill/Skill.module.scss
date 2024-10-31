@@ -1,3 +1,4 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/_variables";
 
@@ -6,6 +7,7 @@
     height: 100%;
     border-radius: 10px;
     padding: 0 20px;
+    animation: zoomIn 0.4s;
     @include mixins.column-flexbox(space-around);
 
     &__title {

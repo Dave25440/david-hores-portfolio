@@ -1,3 +1,4 @@
+@use "../../styles/_animations";
 @use "../../styles/_mixins";
 @use "../../styles/variables";
 
@@ -5,6 +6,7 @@
     background: linear-gradient(#3c8e6d, #214e3c);
     border: 0;
     cursor: pointer;
+    animation: zoomIn 0.4s;
     @include mixins.card-style(0);
 
     &:hover {
