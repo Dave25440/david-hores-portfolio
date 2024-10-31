@@ -25,9 +25,14 @@
         margin: 70px auto auto auto;
         padding: 0;
         box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.4s ease;
 
         &::backdrop {
             background: transparent;
+        }
+
+        &__close {
+            animation: fadeOut 0.4s ease;
         }
     }
 

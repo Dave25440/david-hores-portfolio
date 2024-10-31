@@ -12,10 +12,31 @@ const getImage = (image) => {
 
 const Preview = ({ picture, title, subtitle }) => {
     const dialogRef = useRef(null);
-    const openModal = () => dialogRef.current && dialogRef.current.showModal();
-    const closeModal = () => dialogRef.current && dialogRef.current.close();
-
     const src = getImage(picture);
+
+    const openModal = () => dialogRef.current && dialogRef.current.showModal();
+
+    const closeModal = () => {
+        const dialog = dialogRef.current;
+
+        if (dialog) {
+            const closingModal = () => {
+                dialog.classList.remove(styles.preview__dialog__close);
+                dialog.removeEventListener("animationend", closingModal);
+                dialog.close();
+            };
+
+            dialog.classList.add(styles.preview__dialog__close);
+            dialog.addEventListener("animationend", closingModal);
+        }
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === "Escape") {
+            e.preventDefault();
+            closeModal();
+        }
+    };
 
     return (
         <>
@@ -35,6 +56,7 @@ const Preview = ({ picture, title, subtitle }) => {
                 className={styles.preview__dialog}
                 ref={dialogRef}
                 onClick={closeModal}
+                onKeyDown={handleKeyDown}
             >
                 <button
                     aria-label="Fermer l'aperçu"
