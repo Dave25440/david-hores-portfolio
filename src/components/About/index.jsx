@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./About.module.scss";
 import Links from "../Links";
 
@@ -28,7 +30,12 @@ const About = ({
                             className={styles.about__button}
                             onClick={flipCard}
                         >
-                            À propos &rarr;
+                            À propos
+                            <FontAwesomeIcon
+                                icon={faArrowRight}
+                                size="xs"
+                                className={styles.about__icon}
+                            />
                         </button>
                         {!project && (
                             <img
@@ -46,7 +53,11 @@ const About = ({
                 </div>
                 <div className={styles.about__back}>
                     <button className={styles.about__button} onClick={flipCard}>
-                        &larr;
+                        <FontAwesomeIcon
+                            icon={faArrowRight}
+                            size="xs"
+                            rotation={180}
+                        />
                     </button>
                     <h2 className={styles.about__title}>
                         {project ? "Enjeux" : "À propos"}
