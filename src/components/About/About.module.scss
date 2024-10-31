@@ -30,21 +30,21 @@
     }
 
     &__front {
-        background: linear-gradient(#3c8e6d, #214e3c);
+        background-color: variables.$color-primary;
     }
 
     &__back {
-        background: linear-gradient(#3c8e6d, #214e3c);
+        background-color: variables.$color-primary;
         transform: rotateY(180deg);
     }
 
     &__button {
         @include mixins.button-style(
-            variables.$color-primary,
+            variables.$color-background,
             (10px 0),
             (10px 20px)
         );
-        @include mixins.text-style(#3c8e6d, 1.25rem, 400);
+        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
 
         &:hover {
             text-decoration: underline;
@@ -57,16 +57,16 @@
 
     &__title {
         padding: 0 20px;
-        @include mixins.text-style(variables.$color-primary, 2.25rem, 500);
+        @include mixins.text-style(variables.$color-background, 2.25rem, 500);
     }
 
     &__subtitle {
         padding: 0 20px;
-        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
+        @include mixins.text-style(variables.$color-background, 1.25rem, 400);
     }
 
     &__text {
         padding: 20px;
-        @include mixins.text-style(variables.$color-primary, 1rem, 400);
+        @include mixins.text-style(variables.$color-background, 1rem, 400);
     }
 }

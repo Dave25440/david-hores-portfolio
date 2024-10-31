@@ -2,7 +2,7 @@
 @use "../../styles/variables";
 
 .links {
-    background-color: variables.$color-primary;
+    background-color: variables.$color-background;
     width: 100%;
     border-radius: 0 0 10px 10px;
     @include mixins.list-style;

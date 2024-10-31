@@ -40,7 +40,7 @@
         position: absolute;
         right: 0;
         @include mixins.button-style(#3c8e6d, 0 10px, 10px 20px);
-        @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
+        @include mixins.text-style(variables.$color-background, 1.25rem, 400);
 
         &:hover {
             text-decoration: underline;

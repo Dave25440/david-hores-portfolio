@@ -13,11 +13,11 @@
     }
 
     &__title {
-        @include mixins.text-style(variables.$color-primary, 2rem, 500);
+        @include mixins.text-style(variables.$color-background, 2rem, 500);
     }
 
     &__subtitle {
         margin-top: 30px;
-        @include mixins.text-style(variables.$color-primary, 1.125rem, 400);
+        @include mixins.text-style(variables.$color-background, 1.125rem, 400);
     }
 }

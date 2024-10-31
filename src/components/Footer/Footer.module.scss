@@ -10,6 +10,6 @@
 
     &__text {
         animation: slideToLeft 0.4s ease-out;
-        @include mixins.text-style(variables.$color-secondary, 0.75rem, 400);
+        @include mixins.text-style(variables.$color-content, 0.75rem, 400);
     }
 }
