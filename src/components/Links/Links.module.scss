@@ -10,11 +10,18 @@
     &__link {
         display: inline-block;
         text-decoration: none;
-        padding: 15px 20px;
-        @include mixins.text-style(#3c8e6d, 1rem, 400);
+        margin: 10px 0 16px 20px;
+        transition: all 0.3s;
+        @include mixins.text-style(variables.$color-content, 1rem, 400);
 
         &:hover {
-            text-decoration: underline;
+            color: variables.$color-primary;
+            margin-left: 30px;
         }
+    }
+
+    &__icon {
+        color: variables.$color-primary;
+        margin-right: 30px;
     }
 }
