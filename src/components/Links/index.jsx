@@ -24,17 +24,17 @@ const Links = ({
         {
             title: "David Horès",
             url: "https://www.linkedin.com/in/dhores/",
-            logo: "faLinkedin"
+            icon: "faLinkedin"
         },
         {
             title: "Dave25440",
             url: "https://github.com/Dave25440",
-            logo: "faGithub"
+            icon: "faGithub"
         },
         {
             title: "hores.d@gmail.com",
             url: "mailto:hores.d@gmail.com",
-            logo: "faEnvelope"
+            icon: "faEnvelope"
         }
     ]
 }) => {
@@ -44,7 +44,7 @@ const Links = ({
                 <li key={index}>
                     <a href={link.url} className={styles.links__link}>
                         <FontAwesomeIcon
-                            icon={icon[link.logo]}
+                            icon={icon[link.icon]}
                             size="xl"
                             fixedWidth
                             className={styles.links__icon}
