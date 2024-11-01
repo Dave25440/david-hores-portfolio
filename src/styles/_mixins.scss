@@ -1,6 +1,4 @@
 @mixin card-style($padding) {
-    position: relative;
-    top: 0;
     text-decoration: none;
     border-radius: 10px;
     padding: $padding;
@@ -8,7 +6,7 @@
 }
 
 @mixin card-transition {
-    top: -10px;
+    transform: translateY(-10px);
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
 }
 

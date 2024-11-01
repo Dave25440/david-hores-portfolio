@@ -32,10 +32,7 @@
     }
 
     &__skill {
-        position: relative;
-        top: 0;
-        text-decoration: none;
-        transition: all 0.3s;
+        @include mixins.card-style(0);
 
         &:hover {
             @include mixins.card-transition;
