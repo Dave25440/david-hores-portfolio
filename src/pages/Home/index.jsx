@@ -30,6 +30,7 @@ const Home = () => {
             </div>
             <div className={styles.home__bottom}>
                 <Card
+                    background="#3c8e6d"
                     title="Formation"
                     subtitle={
                         <>

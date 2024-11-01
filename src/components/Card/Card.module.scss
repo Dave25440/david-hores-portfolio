@@ -3,21 +3,24 @@
 @use "../../styles/_variables";
 
 .card {
-    background: linear-gradient(#3c8e6d, #214e3c);
     animation: zoomIn 0.4s;
-    @include mixins.card-style(0 20px);
-    @include mixins.column-flexbox(center);
+    @include mixins.card-style(5px);
+    @include mixins.column-flexbox(space-between);
 
     &:hover {
         @include mixins.card-transition;
     }
 
     &__title {
-        @include mixins.text-style(variables.$color-background, 2rem, 500);
+        background-color: variables.$color-background;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 15px;
+        @include mixins.text-style(variables.$color-content, 2rem, 500);
     }
 
     &__subtitle {
         margin-top: 30px;
+        padding: 0 15px;
         @include mixins.text-style(variables.$color-background, 1.125rem, 400);
     }
 }
