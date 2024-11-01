@@ -27,11 +27,14 @@
     }
 
     &__link {
+        display: block;
         text-decoration: none;
+        transition: all 0.3s;
         @include mixins.text-style(variables.$color-content, 1.25rem, 400);
 
         &:hover {
-            text-decoration: underline;
+            color: variables.$color-primary;
+            transform: translateX(-10px);
         }
     }
 }
