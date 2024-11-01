@@ -1,9 +1,12 @@
 import styles from "./Skill.module.scss";
 import Tool from "../Tool";
 
-const Skill = ({ title, tools, column, skills }) => {
+const Skill = ({ link, color, title, tools, column, skills }) => {
     return (
-        <article className={styles.skill}>
+        <article
+            className={`${styles.skill} ${link && styles["skill--link"]}`}
+            style={{ backgroundColor: color }}
+        >
             <h3 className={styles.skill__title}>{title}</h3>
             {tools ? (
                 <ul

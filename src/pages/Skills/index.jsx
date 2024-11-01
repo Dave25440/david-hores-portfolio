@@ -18,12 +18,14 @@ const Skills = () => {
                 {toolCategories.slice(0, 2).map((category) => (
                     <Skill
                         key={category.id}
+                        color={category.color}
                         title={category.title}
                         tools={categoryTools(category.title)}
                     />
                 ))}
             </div>
             <Skill
+                color={toolCategories[2].color}
                 title={toolCategories[2].title}
                 tools={categoryTools(toolCategories[2].title)}
                 column

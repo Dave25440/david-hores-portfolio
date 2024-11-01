@@ -1,14 +1,17 @@
 [
     {
         "id": "tc2-frontend",
-        "title": "Front-end"
+        "title": "Front-end",
+        "color": "#3b7fa4"
     },
     {
         "id": "tc3-backend",
-        "title": "Back-end"
+        "title": "Back-end",
+        "color": "#507e3a"
     },
     {
         "id": "tc1-outils",
-        "title": "Outils"
+        "title": "Outils",
+        "color": "#3a8490"
     }
 ]

@@ -2,7 +2,8 @@
 @use "../../styles/_variables";
 
 .tool {
-    @include mixins.text-style(variables.$color-background, 1.125rem, 400);
+    text-align: center;
+    @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
     &__logo {
         margin-bottom: 30px;

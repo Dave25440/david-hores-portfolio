@@ -3,22 +3,28 @@
 @use "../../styles/_variables";
 
 .skill {
-    background: linear-gradient(#3c8e6d, #214e3c);
-    height: 100%;
     border-radius: 10px;
-    padding: 0 20px;
+    padding: 5px;
     animation: zoomIn 0.4s;
-    @include mixins.column-flexbox(space-around);
+    @include mixins.column-flexbox(space-between);
+
+    &--link {
+        height: 100%;
+    }
 
     &__title {
+        padding: 10px 15px;
         @include mixins.text-style(variables.$color-background, 2rem, 500);
     }
 
     &__tools {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 15%;
-        text-align: center;
+        background-color: variables.$color-background;
+        height: 100%;
+        border-radius: 0 0 5px 5px;
         @include mixins.list-style;
 
         &--column {
@@ -31,6 +37,6 @@
         gap: 20px;
         @include mixins.column-flexbox(flex-start);
         @include mixins.list-style;
-        @include mixins.text-style(variables.$color-background, 1.125rem, 400);
+        @include mixins.text-style(variables.$color-content, 1.125rem, 400);
     }
 }

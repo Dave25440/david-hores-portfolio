@@ -39,7 +39,12 @@ const Home = () => {
                     to="/david-hores-portfolio/competences"
                     className={styles.home__skill}
                 >
-                    <Skill title="MERN Stack" tools={mernTools} />
+                    <Skill
+                        link
+                        color="#3c8e6d"
+                        title="MERN Stack"
+                        tools={mernTools}
+                    />
                 </Link>
             </div>
         </section>
