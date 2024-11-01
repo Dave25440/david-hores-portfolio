@@ -25,17 +25,18 @@
         align-items: flex-start;
         position: absolute;
         backface-visibility: hidden;
-        @include mixins.column-flexbox(space-between);
         @include mixins.block-size(100%, 100%, 10px);
     }
 
     &__front {
         background-color: variables.$color-primary;
+        @include mixins.column-flexbox(space-between);
     }
 
     &__back {
-        background-color: variables.$color-primary;
+        background-color: variables.$color-tertiary;
         transform: rotateY(180deg);
+        @include mixins.column-flexbox(flex-start);
     }
 
     &__top {
@@ -58,6 +59,10 @@
             border-radius: 0 0 10px 10px;
             margin-left: 10px;
         }
+
+        &--back {
+            color: variables.$color-tertiary;
+        }
     }
 
     &__icon {
@@ -73,6 +78,10 @@
         padding: 10px;
     }
 
+    &__section {
+        margin-top: 30px;
+    }
+
     &__title {
         margin-top: 30px;
         padding: 0 20px;
@@ -85,7 +94,8 @@
     }
 
     &__text {
-        padding: 20px;
-        @include mixins.text-style(variables.$color-background, 1rem, 400);
+        text-align: justify;
+        margin: 30px 20px;
+        @include mixins.text-style(variables.$color-background, 1.125rem, 400);
     }
 }

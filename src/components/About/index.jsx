@@ -52,17 +52,22 @@ const About = ({
                     <Links links={links} />
                 </div>
                 <div className={styles.about__back}>
-                    <button className={styles.about__button} onClick={flipCard}>
+                    <button
+                        className={`${styles.about__button} ${styles["about__button--back"]}`}
+                        onClick={flipCard}
+                    >
                         <FontAwesomeIcon
                             icon={faArrowRight}
                             size="xs"
                             rotation={180}
                         />
                     </button>
-                    <h2 className={styles.about__title}>
-                        {project ? "Enjeux" : "À propos"}
-                    </h2>
-                    <p className={styles.about__text}>{summary}</p>
+                    <section className={styles.about__section}>
+                        <h2 className={styles.about__title}>
+                            {project ? "Enjeux" : "À propos"}
+                        </h2>
+                        <p className={styles.about__text}>{summary}</p>
+                    </section>
                 </div>
             </div>
         </article>
