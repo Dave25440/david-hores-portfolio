@@ -32,13 +32,8 @@ const Home = () => {
                 <Card
                     background="#3c8e6d"
                     title="Formation"
-                    subtitle={
-                        <>
-                            Développeur Web OpenClassrooms
-                            <br />
-                            Niveau 5
-                        </>
-                    }
+                    subtitle="Développeur Web OpenClassrooms"
+                    tags={["Titre RNCP", "Niveau 5"]}
                 />
                 <Link
                     to="/david-hores-portfolio/competences"

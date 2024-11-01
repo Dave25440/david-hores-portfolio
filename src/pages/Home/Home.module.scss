@@ -6,7 +6,7 @@
     @include mixins.grid(auto, 1fr 1.4fr);
 
     &__top {
-        @include mixins.grid(3fr 1fr, auto);
+        @include mixins.grid(2.4fr 1fr, auto);
     }
 
     &__introduction {

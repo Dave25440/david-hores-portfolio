@@ -1,0 +1,17 @@
+@use "../../styles/_mixins";
+@use "../../styles/_variables";
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 15px 10px 15px;
+    @include mixins.list-style;
+
+    &__tag {
+        background-color: variables.$color-background;
+        border-radius: 5px;
+        padding: 5px 10px;
+        @include mixins.text-style(variables.$color-content, 1rem, 400);
+    }
+}

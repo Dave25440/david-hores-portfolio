@@ -3,6 +3,11 @@
 @use "../../styles/_variables";
 
 .card {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(0, 0, 0, 0.15) 100%
+    );
     animation: zoomIn 0.4s;
     @include mixins.card-style(5px);
     @include mixins.column-flexbox(space-between);
@@ -13,14 +18,14 @@
 
     &__title {
         background-color: variables.$color-background;
-        border-radius: 10px 10px 0 0;
+        border-radius: 5px 5px 0 0;
         padding: 10px 15px;
         @include mixins.text-style(variables.$color-content, 2rem, 500);
     }
 
     &__subtitle {
-        margin-top: 30px;
+        margin-top: 15px;
         padding: 0 15px;
-        @include mixins.text-style(variables.$color-background, 1.125rem, 400);
+        @include mixins.text-style(variables.$color-background, 1.25rem, 400);
     }
 }

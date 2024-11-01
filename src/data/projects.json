@@ -4,6 +4,7 @@
         "title": "Kasa",
         "subtitle": "Location d'appartements entre particuliers",
         "background": "#ff6060",
+        "tags": ["React", "Sass"],
         "logo": "Logo",
         "links": [
             {
@@ -36,6 +37,13 @@
         "title": "Nina Carducci",
         "subtitle": "Site vitrine de photographe",
         "background": "#e5975f",
+        "tags": [
+            "Optimisation",
+            "Accessibilité",
+            "SEO",
+            "HTML et CSS",
+            "jQuery"
+        ],
         "logo": "Logo",
         "links": [
             {
@@ -68,6 +76,7 @@
         "title": "Booki",
         "subtitle": "Hébergements et activités en ville ou en pleine nature",
         "background": "#0065fc",
+        "tags": ["HTML et CSS"],
         "logo": "Logo",
         "links": [
             {
@@ -100,6 +109,7 @@
         "title": "Mon Vieux Grimoire",
         "subtitle": "Référencement et notation de livres",
         "background": "#796157",
+        "tags": ["Node.js", "Express", "MongoDB"],
         "logo": "Logo",
         "links": [
             {
@@ -127,6 +137,7 @@
         "title": "Sophie Bluel",
         "subtitle": "Site portfolio d'architecte d'intérieur",
         "background": "#1d6154",
+        "tags": ["JavaScript", "HTML et CSS"],
         "logo": "Logo",
         "links": [
             {
@@ -154,6 +165,7 @@
         "title": "Menu Maker by Qwenta",
         "subtitle": "Affichage et mise en page de menus pour restaurateurs",
         "background": "#8bc7b1",
+        "tags": ["Scrum", "Notion"],
         "logo": "Logo",
         "links": [
             {
