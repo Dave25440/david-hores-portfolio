@@ -3,7 +3,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
     faEnvelope,
     faGlobe,
-    faPersonChalkboard,
+    faChalkboardUser,
     faFilePdf,
     faTable
 } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +14,7 @@ const icon = {
     faGithub,
     faEnvelope,
     faGlobe,
-    faPersonChalkboard,
+    faChalkboardUser,
     faFilePdf,
     faTable
 };
