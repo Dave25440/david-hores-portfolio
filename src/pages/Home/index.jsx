@@ -26,11 +26,23 @@ const Home = () => {
                         ceux de vos utilisateurs.
                     </p>
                 </div>
-                <Card {...projects[0]} />
+                <Card
+                    {...projects[0]}
+                    background="#8c686f"
+                    title="Projet réalisé"
+                    subtitle={
+                        <>
+                            {projects[0].title}
+                            <br />
+                            {projects[0].subtitle}
+                        </>
+                    }
+                    tags={["Front-end", "React"]}
+                />
             </div>
             <div className={styles.home__bottom}>
                 <Card
-                    background="#3c8e6d"
+                    background="#6f8c68"
                     title="Formation"
                     subtitle="Développeur Web OpenClassrooms"
                     tags={["Titre RNCP", "Niveau 5"]}
