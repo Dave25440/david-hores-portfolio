@@ -3,7 +3,7 @@
 @use "../../styles/_variables";
 
 .home {
-    @include mixins.grid(auto, 1fr 1.4fr);
+    @include mixins.grid(auto, 1fr 1.2fr);
 
     &__top {
         @include mixins.grid(2.4fr 1fr, auto);
@@ -28,7 +28,7 @@
     }
 
     &__bottom {
-        @include mixins.grid(1fr 3.6fr, auto);
+        @include mixins.grid(1fr 3fr, auto);
     }
 
     &__skill {

@@ -9,11 +9,11 @@
     @include mixins.column-flexbox(space-between);
 
     &--link {
-        height: 100%;
+        height: calc(100% - 10px);
     }
 
     &__title {
-        padding: 10px 15px;
+        padding: 10px 15px 15px 15px;
         @include mixins.text-style(variables.$color-background, 2rem, 500);
     }
 

@@ -4,6 +4,6 @@
     @include mixins.grid(2.2fr 1fr, auto);
 
     &__left {
-        @include mixins.grid(auto, auto);
+        @include mixins.grid(auto, repeat(2, 1fr));
     }
 }
