@@ -5,7 +5,23 @@
     text-align: center;
     @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
+    &--mern {
+        transform: scale(110%);
+    }
+
+    &--column {
+        transform: scale(90%);
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
     &__logo {
-        margin-bottom: 30px;
+        fill: currentColor;
+        height: 54px;
     }
 }

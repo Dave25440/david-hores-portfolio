@@ -15,21 +15,22 @@
     &__title {
         padding: 10px 15px 15px 15px;
         @include mixins.text-style(variables.$color-background, 2rem, 500);
+
+        &--mern {
+            @include mixins.text-style(variables.$color-content, 2rem, 500);
+        }
     }
 
     &__tools {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 15%;
-        background-color: variables.$color-background;
         height: 100%;
         border-radius: 0 0 5px 5px;
         @include mixins.list-style;
 
         &--column {
             flex-direction: column;
-            gap: 40px;
         }
     }
 

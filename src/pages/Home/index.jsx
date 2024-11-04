@@ -53,9 +53,21 @@ const Home = () => {
                 >
                     <Skill
                         link
-                        color="#3c8e6d"
-                        title="MERN Stack"
+                        color="#ddd"
+                        mern
+                        title={
+                            <>
+                                <i style={{ color: mernTools[0].color }}>M</i>
+                                <i style={{ color: mernTools[1].color }}>E</i>
+                                <i style={{ color: mernTools[2].color }}>R</i>
+                                <i style={{ color: mernTools[3].color }}>
+                                    N
+                                </i>{" "}
+                                Stack
+                            </>
+                        }
                         tools={mernTools}
+                        background="#fbfbfb"
                     />
                 </Link>
             </div>

@@ -3,76 +3,80 @@
         "id": "t8-react",
         "title": "React",
         "category": "Front-end",
-        "logo": "Logo",
+        "color": "#087ea4",
+        "logo": ["react"],
         "mern": 3
     },
     {
         "id": "t9-sass",
         "title": "Sass",
         "category": "Front-end",
-        "logo": "Logo"
+        "logo": ["sass"]
     },
     {
         "id": "t5-javascript",
         "title": "JavaScript",
         "category": "Front-end",
-        "logo": "Logo"
+        "logo": ["javascript"]
     },
     {
         "id": "t4-html-css",
         "title": "HTML et CSS",
         "category": "Front-end",
-        "logo": "Logo"
+        "logo": ["html", "css"]
     },
     {
         "id": "t6-nodejs",
         "title": "Node.js",
         "category": "Back-end",
-        "logo": "Logo",
+        "color": "#417e38",
+        "logo": ["nodejs"],
         "mern": 4
     },
     {
         "id": "t10-express",
         "title": "Express",
         "category": "Back-end",
-        "logo": "Logo",
+        "color": "#353535",
+        "logo": ["express"],
         "mern": 2
     },
     {
         "id": "t7-nosql",
         "title": "NoSQL",
         "category": "Back-end",
-        "logo": "Logo"
+        "logo": ["nosql"]
     },
     {
         "id": "t11-mongodb",
         "title": "MongoDB",
         "category": "Back-end",
-        "logo": "Logo",
+        "color": "#00684A",
+        "logo": ["mongodb"],
         "mern": 1
     },
     {
         "id": "t2-git-github",
         "title": "Git et GitHub",
         "category": "Outils",
-        "logo": "Logo"
+        "logo": ["git", "github"]
     },
     {
-        "id": "t12-scrum",
-        "title": "Scrum",
+        "id": "t12-agile",
+        "title": "Agile",
         "category": "Outils",
-        "logo": "Logo"
+        "logo": ["agile"]
     },
     {
         "id": "t3-figma",
         "title": "Figma",
         "category": "Outils",
-        "logo": "Logo"
+        "logo": ["figma"]
     },
     {
         "id": "t1-chatgpt",
         "title": "ChatGPT",
         "category": "Outils",
-        "logo": "Logo"
+        "logo": ["chatgpt"]
     }
 ]
