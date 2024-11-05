@@ -1,8 +1,24 @@
+import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.scss";
 import Tags from "../Tags";
 
 const Card = ({ id, background, title, subtitle, tags }) => {
+    const cardRef = useRef(null);
+
+    useEffect(() => {
+        const card = cardRef.current;
+
+        if (card) {
+            const cardAnimated = () => {
+                card.classList.add(styles["card--animated"]);
+                card.removeEventListener("animationend", cardAnimated);
+            };
+
+            card.addEventListener("animationend", cardAnimated);
+        }
+    }, []);
+
     return (
         <Link
             to={
@@ -12,6 +28,7 @@ const Card = ({ id, background, title, subtitle, tags }) => {
             }
             className={styles.card}
             style={{ backgroundColor: background }}
+            ref={cardRef}
         >
             <article>
                 <h3

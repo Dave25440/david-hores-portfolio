@@ -12,7 +12,7 @@
     @include mixins.card-style(5px);
     @include mixins.column-flexbox(space-between);
 
-    &:hover {
+    &--animated:hover {
         @include mixins.card-transition;
     }
 
