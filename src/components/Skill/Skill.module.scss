@@ -36,6 +36,7 @@
 
     &__skills {
         gap: 20px;
+        height: 100%;
         @include mixins.column-flexbox(flex-start);
         @include mixins.list-style;
         @include mixins.text-style(variables.$color-content, 1.125rem, 400);

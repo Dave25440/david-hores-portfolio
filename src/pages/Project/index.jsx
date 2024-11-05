@@ -30,7 +30,12 @@ const Project = () => {
                             {project.description}
                         </p>
                     </div>
-                    <Skill title="Compétences" skills={project.skills} />
+                    <Skill
+                        color="#3c8e6d"
+                        title="Compétences"
+                        background="#ebf3f0"
+                        skills={project.skills}
+                    />
                 </div>
                 <Preview {...project} />
             </section>
