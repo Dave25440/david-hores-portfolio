@@ -1,7 +1,15 @@
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 const Header = () => {
+    const location = useLocation();
+    const pathname = location.pathname;
+    const paths = [
+        "/david-hores-portfolio/realisations",
+        "/david-hores-portfolio/competences",
+        "/david-hores-portfolio/contact"
+    ];
+
     return (
         <header className={styles.header}>
             <h1 className={styles.header__title}>
@@ -16,24 +24,33 @@ const Header = () => {
                 <ul className={styles.header__list}>
                     <li>
                         <Link
-                            to="/david-hores-portfolio/realisations"
-                            className={styles.header__link}
+                            to={paths[0]}
+                            className={`${styles.header__link} ${
+                                pathname === paths[0] &&
+                                styles["header__link--active"]
+                            }`}
                         >
                             Réalisations
                         </Link>
                     </li>
                     <li>
                         <Link
-                            to="/david-hores-portfolio/competences"
-                            className={styles.header__link}
+                            to={paths[1]}
+                            className={`${styles.header__link} ${
+                                pathname === paths[1] &&
+                                styles["header__link--active"]
+                            }`}
                         >
                             Compétences
                         </Link>
                     </li>
                     <li>
                         <Link
-                            to="/david-hores-portfolio/contact"
-                            className={styles.header__link}
+                            to={paths[2]}
+                            className={`${styles.header__link} ${
+                                pathname === paths[2] &&
+                                styles["header__link--active"]
+                            }`}
                         >
                             Contact
                         </Link>

@@ -36,5 +36,14 @@
             color: variables.$color-secondary;
             transform: translateX(-10px);
         }
+
+        &--active {
+            transform: translateX(-10px);
+            @include mixins.text-style(
+                variables.$color-secondary,
+                1.25rem,
+                500
+            );
+        }
     }
 }
