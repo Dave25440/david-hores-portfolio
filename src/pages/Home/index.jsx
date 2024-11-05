@@ -29,7 +29,7 @@ const Home = () => {
                 <Card
                     {...projects[0]}
                     background="#8c686f"
-                    title="Projet réalisé"
+                    title="Voir un projet"
                     subtitle={
                         <>
                             {projects[0].title}

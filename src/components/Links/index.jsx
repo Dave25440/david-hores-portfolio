@@ -42,7 +42,12 @@ const Links = ({
         <ul className={styles.links}>
             {links.map((link, index) => (
                 <li key={index}>
-                    <a href={link.url} className={styles.links__link}>
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={link.url}
+                        className={styles.links__link}
+                    >
                         <FontAwesomeIcon
                             icon={icon[link.icon]}
                             size="xl"
