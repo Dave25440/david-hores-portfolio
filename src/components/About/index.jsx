@@ -77,7 +77,7 @@ const About = ({
                             <h2 className={styles.about__title}>{title}</h2>
                         </>
                     )}
-                    <Links links={links} />
+                    <Links links={links} background={background} />
                 </div>
                 <div
                     className={styles.about__back}

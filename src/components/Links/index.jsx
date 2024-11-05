@@ -36,7 +36,8 @@ const Links = ({
             url: "mailto:hores.d@gmail.com",
             icon: "mail"
         }
-    ]
+    ],
+    background
 }) => {
     return (
         <ul className={styles.links}>
@@ -47,12 +48,17 @@ const Links = ({
                         rel="noopener noreferrer"
                         href={link.url}
                         className={styles.links__link}
+                        onMouseEnter={(e) =>
+                            (e.currentTarget.style.color = background)
+                        }
+                        onMouseLeave={(e) => (e.currentTarget.style.color = "")}
                     >
                         <FontAwesomeIcon
                             icon={icon[link.icon]}
                             size="xl"
                             fixedWidth
                             className={styles.links__icon}
+                            style={{ color: background }}
                         />
                         {link.title}
                     </a>
