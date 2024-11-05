@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Preview.module.scss";
@@ -13,8 +13,22 @@ const getImage = (image) => {
 };
 
 const Preview = ({ picture, title, subtitle, background }) => {
+    const previewRef = useRef(null);
     const dialogRef = useRef(null);
     const src = getImage(picture);
+
+    useEffect(() => {
+        const preview = previewRef.current;
+
+        if (preview) {
+            const previewAnimated = () => {
+                preview.classList.add(styles["preview--animated"]);
+                preview.removeEventListener("animationend", previewAnimated);
+            };
+
+            preview.addEventListener("animationend", previewAnimated);
+        }
+    }, []);
 
     const openModal = () => dialogRef.current && dialogRef.current.showModal();
 
@@ -42,9 +56,10 @@ const Preview = ({ picture, title, subtitle, background }) => {
 
     return (
         <>
-            <button
+            <figure
                 aria-label={`Voir ${title} : ${subtitle}`}
                 className={styles.preview}
+                ref={previewRef}
                 onClick={openModal}
             >
                 <img
@@ -52,7 +67,7 @@ const Preview = ({ picture, title, subtitle, background }) => {
                     alt={`${title} : ${subtitle}`}
                     className={styles.preview__img}
                 />
-            </button>
+            </figure>
             <dialog
                 aria-label={`Aperçu de ${title} : ${subtitle}`}
                 className={styles.preview__dialog}
