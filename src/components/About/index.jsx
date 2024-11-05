@@ -7,13 +7,13 @@ import Links from "../Links";
 import photo from "../../assets/david_hores.webp";
 
 const About = ({
-    background,
+    color,
     project,
     title = "Je suis David, Développeur Web",
     subtitle,
     tags,
     links,
-    color,
+    back,
     summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus lacus. Etiam porta consequat nulla, vel aliquet quam pulvinar sed. Proin justo massa, ultrices in augue quis, viverra varius purus. Etiam non commodo dolor. Aliquam hendrerit porttitor est vitae gravida. Vestibulum urna libero, placerat a tellus eget, maximus commodo quam. Morbi non justo odio. Suspendisse egestas tincidunt libero, vitae maximus mauris vestibulum vitae."
 }) => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -28,13 +28,13 @@ const About = ({
             >
                 <div
                     className={styles.about__front}
-                    style={{ backgroundColor: background }}
+                    style={{ backgroundColor: color }}
                 >
                     {project ? (
                         <div className={styles["about__top--project"]}>
                             <button
                                 className={styles.about__button}
-                                style={{ color: background }}
+                                style={{ color: color }}
                                 onClick={flipCard}
                             >
                                 À propos
@@ -52,7 +52,7 @@ const About = ({
                                     {subtitle}
                                 </h3>
                             </div>
-                            <Tags tags={tags} background={background} />
+                            <Tags tags={tags} color={color} />
                         </div>
                     ) : (
                         <>
@@ -77,15 +77,15 @@ const About = ({
                             <h2 className={styles.about__title}>{title}</h2>
                         </>
                     )}
-                    <Links links={links} background={background} />
+                    <Links links={links} color={color} />
                 </div>
                 <div
                     className={styles.about__back}
-                    style={{ background: color }}
+                    style={{ background: back }}
                 >
                     <button
                         className={`${styles.about__button} ${styles["about__button--back"]}`}
-                        style={{ color: color }}
+                        style={{ color: back }}
                         onClick={flipCard}
                     >
                         <FontAwesomeIcon

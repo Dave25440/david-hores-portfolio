@@ -46,7 +46,11 @@ const Skill = ({
                     style={{ backgroundColor: background }}
                 >
                     {skills.map((skill, index) => (
-                        <li key={index} className={styles.skill__skill}>
+                        <li
+                            key={index}
+                            className={styles.skill__skill}
+                            style={{ color: color }}
+                        >
                             {skill}
                         </li>
                     ))}

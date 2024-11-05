@@ -3,10 +3,10 @@
         "id": "p5-kasa",
         "title": "Kasa",
         "subtitle": "Location d'appartements entre particuliers",
-        "background": "#ff6060",
+        "color": "#ff6060",
+        "back": "#b24343",
+        "background": "#ffefef",
         "tags": ["React", "Sass"],
-        "color": "#b24343",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Démo du site",
@@ -25,6 +25,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -37,7 +38,9 @@
         "id": "p4-nina-carducci",
         "title": "Nina Carducci",
         "subtitle": "Site vitrine de photographe",
-        "background": "#e5975f",
+        "color": "#e5975f",
+        "back": "#a06942",
+        "background": "#fcf4ef",
         "tags": [
             "Optimisation",
             "Accessibilité",
@@ -45,8 +48,6 @@
             "HTML et CSS",
             "jQuery"
         ],
-        "color": "#a06942",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Démo du site",
@@ -65,6 +66,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -77,10 +79,10 @@
         "id": "p2-booki",
         "title": "Booki",
         "subtitle": "Hébergements et activités en ville ou en pleine nature",
-        "background": "#0065fc",
+        "color": "#0065fc",
+        "back": "#0046b0",
+        "background": "#e5effe",
         "tags": ["HTML et CSS"],
-        "color": "#0046b0",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Démo du site",
@@ -99,6 +101,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -111,10 +114,10 @@
         "id": "p6-mon-vieux-grimoire",
         "title": "Mon Vieux Grimoire",
         "subtitle": "Référencement et notation de livres",
-        "background": "#796157",
+        "color": "#796157",
+        "back": "#54433c",
+        "background": "#f1efee",
         "tags": ["Node.js", "Express", "MongoDB"],
-        "color": "#54433c",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Dépôt du code source",
@@ -128,6 +131,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -140,10 +144,10 @@
         "id": "p3-sophie-bluel",
         "title": "Sophie Bluel",
         "subtitle": "Site portfolio d'architecte d'intérieur",
-        "background": "#1d6154",
+        "color": "#1d6154",
+        "back": "#14433a",
+        "background": "#e8efed",
         "tags": ["JavaScript", "HTML et CSS"],
-        "color": "#14433a",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Dépôt du code source",
@@ -157,6 +161,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -169,10 +174,10 @@
         "id": "p7-menu-maker-by-qwenta",
         "title": "Menu Maker by Qwenta",
         "subtitle": "Affichage et mise en page de menus pour restaurateurs",
-        "background": "#8bc7b1",
+        "color": "#8bc7b1",
+        "back": "#618b7b",
+        "background": "#f3f9f7",
         "tags": ["Scrum", "Notion"],
-        "color": "#618b7b",
-        "logo": "Logo",
         "links": [
             {
                 "title": "Spécifications techniques",
@@ -191,6 +196,7 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "logo": "Logo",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "skills": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",

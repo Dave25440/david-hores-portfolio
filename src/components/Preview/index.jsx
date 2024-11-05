@@ -12,7 +12,7 @@ const getImage = (image) => {
     }
 };
 
-const Preview = ({ picture, title, subtitle, background }) => {
+const Preview = ({ picture, title, subtitle, color }) => {
     const previewRef = useRef(null);
     const dialogRef = useRef(null);
     const src = getImage(picture);
@@ -78,7 +78,7 @@ const Preview = ({ picture, title, subtitle, background }) => {
                 <button
                     aria-label="Fermer l'aperçu"
                     className={styles.preview__button}
-                    style={{ backgroundColor: background }}
+                    style={{ backgroundColor: color }}
                     onClick={closeModal}
                 >
                     <FontAwesomeIcon icon={faXmark} size="sm" />

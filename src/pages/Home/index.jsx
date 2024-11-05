@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
                 <Card
                     {...projects[0]}
-                    background="#8c686f"
+                    color="#8c686f"
                     title="Voir un projet"
                     subtitle={
                         <>
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
             <div className={styles.home__bottom}>
                 <Card
-                    background="#6f8c68"
+                    color="#6f8c68"
                     title="Formation"
                     subtitle="Développeur Web OpenClassrooms"
                     tags={["Titre RNCP", "Niveau 5"]}

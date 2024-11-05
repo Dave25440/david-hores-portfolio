@@ -37,7 +37,7 @@ const Links = ({
             icon: "mail"
         }
     ],
-    background
+    color
 }) => {
     return (
         <ul className={styles.links}>
@@ -49,7 +49,7 @@ const Links = ({
                         href={link.url}
                         className={styles.links__link}
                         onMouseEnter={(e) =>
-                            (e.currentTarget.style.color = background)
+                            (e.currentTarget.style.color = color)
                         }
                         onMouseLeave={(e) => (e.currentTarget.style.color = "")}
                     >
@@ -58,7 +58,7 @@ const Links = ({
                             size="xl"
                             fixedWidth
                             className={styles.links__icon}
-                            style={{ color: background }}
+                            style={{ color: color }}
                         />
                         {link.title}
                     </a>

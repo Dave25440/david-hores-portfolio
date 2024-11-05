@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Card.module.scss";
 import Tags from "../Tags";
 
-const Card = ({ id, background, title, subtitle, tags }) => {
+const Card = ({ id, color, title, subtitle, tags }) => {
     const cardRef = useRef(null);
 
     useEffect(() => {
@@ -27,19 +27,16 @@ const Card = ({ id, background, title, subtitle, tags }) => {
                     : `/david-hores-portfolio/formation`
             }
             className={styles.card}
-            style={{ backgroundColor: background }}
+            style={{ backgroundColor: color }}
             ref={cardRef}
         >
             <article>
-                <h3
-                    className={styles.card__title}
-                    style={{ color: background }}
-                >
+                <h3 className={styles.card__title} style={{ color: color }}>
                     {title}
                 </h3>
                 <p className={styles.card__subtitle}>{subtitle}</p>
             </article>
-            <Tags tags={tags} background={background} />
+            <Tags tags={tags} color={color} />
         </Link>
     );
 };

@@ -1,13 +1,13 @@
 import styles from "./Tags.module.scss";
 
-const Tags = ({ tags, background }) => {
+const Tags = ({ tags, color }) => {
     return (
         <ul className={styles.tags}>
             {tags.map((tag, index) => (
                 <li
                     key={index}
                     className={styles.tags__tag}
-                    style={{ color: background }}
+                    style={{ color: color }}
                 >
                     {tag}
                 </li>
