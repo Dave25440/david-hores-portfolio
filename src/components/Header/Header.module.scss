@@ -33,7 +33,7 @@
         @include mixins.text-style(variables.$color-content, 1.25rem, 400);
 
         &:hover {
-            color: variables.$color-primary;
+            color: variables.$color-secondary;
             transform: translateX(-10px);
         }
     }

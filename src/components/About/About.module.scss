@@ -34,13 +34,13 @@
     }
 
     &__back {
-        background-color: variables.$color-tertiary;
+        background-color: variables.$color-primary-dark;
         transform: rotateY(180deg);
         @include mixins.column-flexbox(flex-start);
     }
 
     &__top {
-        background-color: variables.$color-secondary;
+        background-color: variables.$color-primary-light;
         @include mixins.block-size(100%, 40%, 10px 10px 50% 50%);
         @include mixins.column-flexbox(flex-start);
     }
@@ -61,7 +61,7 @@
         }
 
         &--back {
-            color: variables.$color-tertiary;
+            color: variables.$color-primary-dark;
         }
     }
 
