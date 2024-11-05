@@ -3,7 +3,6 @@
 @use "../../styles/variables";
 
 .preview {
-    background: linear-gradient(#3c8e6d, #214e3c);
     cursor: pointer;
     animation: zoomIn 0.4s;
     @include mixins.card-style(0);
