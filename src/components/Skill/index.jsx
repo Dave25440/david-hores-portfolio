@@ -34,6 +34,7 @@ const Skill = ({
                         <Tool
                             key={tool.id}
                             {...tool}
+                            mern={mern}
                             column={column}
                             color={mern ? tool.color : color}
                         />
