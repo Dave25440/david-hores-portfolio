@@ -5,18 +5,18 @@ import {
     faGlobe,
     faChalkboardUser,
     faFilePdf,
-    faTable
+    faTableList
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Links.module.scss";
 
 const icon = {
-    faLinkedin,
-    faGithub,
-    faEnvelope,
-    faGlobe,
-    faChalkboardUser,
-    faFilePdf,
-    faTable
+    linkedin: faLinkedin,
+    github: faGithub,
+    mail: faEnvelope,
+    ghPages: faGlobe,
+    canva: faChalkboardUser,
+    pdf: faFilePdf,
+    notion: faTableList
 };
 
 const Links = ({
@@ -24,17 +24,17 @@ const Links = ({
         {
             title: "David Horès",
             url: "https://www.linkedin.com/in/dhores/",
-            icon: "faLinkedin"
+            icon: "linkedin"
         },
         {
             title: "Dave25440",
             url: "https://github.com/Dave25440",
-            icon: "faGithub"
+            icon: "github"
         },
         {
             title: "hores.d@gmail.com",
             url: "mailto:hores.d@gmail.com",
-            icon: "faEnvelope"
+            icon: "mail"
         }
     ]
 }) => {
