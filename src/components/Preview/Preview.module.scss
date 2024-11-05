@@ -39,11 +39,17 @@
     &__button {
         position: absolute;
         right: 0;
-        @include mixins.button-style(#3c8e6d, 0 10px, 10px 20px);
+        transition: all 0.3s;
+        @include mixins.button-style(
+            variables.$color-secondary,
+            0 10px,
+            10px 20px
+        );
         @include mixins.text-style(variables.$color-background, 1.25rem, 400);
 
         &:hover {
-            text-decoration: underline;
+            right: 10px;
+            border-radius: 0 0 10px 10px;
         }
     }
 }

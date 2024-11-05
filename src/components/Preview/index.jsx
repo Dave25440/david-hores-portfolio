@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Preview.module.scss";
 
 const getImage = (image) => {
@@ -10,7 +12,7 @@ const getImage = (image) => {
     }
 };
 
-const Preview = ({ picture, title, subtitle }) => {
+const Preview = ({ picture, title, subtitle, background }) => {
     const dialogRef = useRef(null);
     const src = getImage(picture);
 
@@ -61,9 +63,10 @@ const Preview = ({ picture, title, subtitle }) => {
                 <button
                     aria-label="Fermer l'aperçu"
                     className={styles.preview__button}
+                    style={{ backgroundColor: background }}
                     onClick={closeModal}
                 >
-                    X
+                    <FontAwesomeIcon icon={faXmark} size="sm" />
                 </button>
                 <img
                     src={src}
