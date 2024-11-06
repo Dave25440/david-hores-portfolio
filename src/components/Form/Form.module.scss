@@ -26,11 +26,7 @@
     &__submit {
         align-self: flex-end;
         transition: all 0.2s;
-        @include mixins.button-style(
-            variables.$color-secondary,
-            10px,
-            10px 20px
-        );
+        @include mixins.button-style(variables.$color-primary, 10px, 10px 20px);
         @include mixins.text-style(variables.$color-background, 1.25rem, 400);
 
         &:hover {
