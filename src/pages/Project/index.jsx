@@ -23,9 +23,7 @@ const Project = () => {
                 <About project {...project} />
                 <div className={styles.project__left}>
                     <div className={styles.project__introduction}>
-                        <h2 className={styles.project__title}>
-                            {project.logo}
-                        </h2>
+                        <h2 className={styles.project__title}>Objectif</h2>
                         <p className={styles.project__text}>
                             {project.description}
                         </p>
