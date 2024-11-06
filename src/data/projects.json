@@ -31,7 +31,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p5_kasa.jpg"
+        "picture": "openclassrooms_projet_kasa_accueil.webp"
     },
     {
         "id": "p4-nina-carducci",
@@ -71,7 +71,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p4_carducci.jpg"
+        "picture": "openclassrooms_projet_carducci_accueil.webp"
     },
     {
         "id": "p2-booki",
@@ -105,7 +105,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p2_booki.jpg"
+        "picture": "openclassrooms_projet_booki_accueil.webp"
     },
     {
         "id": "p6-mon-vieux-grimoire",
@@ -134,7 +134,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p6_grimoire.jpg"
+        "picture": "openclassrooms_projet_grimoire_accueil.webp"
     },
     {
         "id": "p3-sophie-bluel",
@@ -163,7 +163,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p6_bluel.jpg"
+        "picture": "openclassrooms_projet_bluel_accueil.webp"
     },
     {
         "id": "p7-menu-maker-by-qwenta",
@@ -197,6 +197,6 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         ],
-        "picture": "oc_p7_qwenta.jpg"
+        "picture": "openclassrooms_projet_qwenta_accueil.webp"
     }
 ]

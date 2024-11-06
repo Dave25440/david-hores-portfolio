@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Preview.module.scss";
@@ -8,46 +8,68 @@ const getImage = (image) => {
         return require(`../../assets/${image}`);
     } catch (error) {
         console.error(error.message);
-        return "null.jpg";
+        return null;
     }
 };
 
 const Preview = ({ picture, title, subtitle, color }) => {
     const previewRef = useRef(null);
     const dialogRef = useRef(null);
+    const [largeImage, setLargeImage] = useState(null);
     const src = getImage(picture);
 
     useEffect(() => {
         const preview = previewRef.current;
 
         if (preview) {
-            const previewAnimated = () => {
-                preview.classList.add(styles["preview--animated"]);
-                preview.removeEventListener("animationend", previewAnimated);
-            };
-
-            preview.addEventListener("animationend", previewAnimated);
+            preview.addEventListener(
+                "animationend",
+                () => {
+                    preview.classList.add(styles["preview--animated"]);
+                },
+                { once: true }
+            );
         }
     }, []);
 
-    const openModal = () => dialogRef.current && dialogRef.current.showModal();
+    const openModal = () => {
+        if (!largeImage && src) {
+            setLargeImage(getImage(picture.replace(".webp", "_large.webp")));
+        }
+
+        const dialog = dialogRef.current;
+
+        if (dialog && src) {
+            dialog.showModal();
+            dialog.scrollTop = 0;
+            dialog.focus();
+        }
+    };
 
     const closeModal = () => {
         const dialog = dialogRef.current;
 
         if (dialog) {
-            const closingModal = () => {
-                dialog.classList.remove(styles.preview__dialog__close);
-                dialog.removeEventListener("animationend", closingModal);
-                dialog.close();
-            };
-
             dialog.classList.add(styles.preview__dialog__close);
-            dialog.addEventListener("animationend", closingModal);
+            dialog.addEventListener(
+                "animationend",
+                () => {
+                    dialog.classList.remove(styles.preview__dialog__close);
+                    dialog.close();
+                },
+                { once: true }
+            );
         }
     };
 
-    const handleKeyDown = (e) => {
+    const openKeyDown = (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openModal();
+        }
+    };
+
+    const closeKeyDown = (e) => {
         if (e.key === "Escape") {
             e.preventDefault();
             closeModal();
@@ -58,13 +80,18 @@ const Preview = ({ picture, title, subtitle, color }) => {
         <>
             <figure
                 aria-label={`Voir ${title} : ${subtitle}`}
+                tabIndex="0"
                 className={styles.preview}
                 ref={previewRef}
                 onClick={openModal}
+                onKeyDown={openKeyDown}
             >
                 <img
                     src={src}
-                    alt={`${title} : ${subtitle}`}
+                    alt={!src ? "Aperçu introuvable" : `${title} : ${subtitle}`}
+                    width="400"
+                    height="594"
+                    loading="lazy"
                     className={styles.preview__img}
                 />
             </figure>
@@ -73,7 +100,7 @@ const Preview = ({ picture, title, subtitle, color }) => {
                 className={styles.preview__dialog}
                 ref={dialogRef}
                 onClick={closeModal}
-                onKeyDown={handleKeyDown}
+                onKeyDown={closeKeyDown}
             >
                 <button
                     aria-label="Fermer l'aperçu"
@@ -84,8 +111,11 @@ const Preview = ({ picture, title, subtitle, color }) => {
                     <FontAwesomeIcon icon={faXmark} size="sm" />
                 </button>
                 <img
-                    src={src}
+                    src={largeImage || src}
                     alt={`${title} : ${subtitle}`}
+                    width="1400"
+                    height="100%"
+                    loading="lazy"
                     className={styles.preview__img}
                     onClick={(e) => {
                         e.stopPropagation();

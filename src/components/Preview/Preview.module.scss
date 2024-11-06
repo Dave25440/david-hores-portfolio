@@ -3,6 +3,8 @@
 @use "../../styles/variables";
 
 .preview {
+    height: 594px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     cursor: pointer;
     animation: zoomIn 0.4s;
     @include mixins.card-style(0);
@@ -14,13 +16,15 @@
     &__img {
         display: block;
         object-fit: cover;
+        object-position: left top;
         @include mixins.block-size(100%, 100%, 10px);
     }
 
     &__dialog {
+        max-width: 1400px;
         border: 0;
         border-radius: 10px;
-        margin: 70px auto auto auto;
+        margin: auto;
         padding: 0;
         box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
         animation: fadeIn 0.4s ease;

@@ -71,6 +71,9 @@ const About = ({
                                 <img
                                     src={photo}
                                     alt="David Horès"
+                                    width="200"
+                                    height="200"
+                                    loading="lazy"
                                     className={styles.about__photo}
                                 />
                             </div>
