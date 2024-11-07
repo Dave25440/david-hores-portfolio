@@ -1,9 +1,22 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Form.module.scss";
 
+const statusMessages = {
+    success: "Message envoyé",
+    error: "Échec de l'envoi"
+};
+
 const Form = () => {
     const formRef = useRef(null);
+    const [messageStatus, setMessageStatus] = useState(null);
+
+    const updateMessageStatus = (status) => {
+        setMessageStatus(status);
+        setTimeout(() => {
+            setMessageStatus(null);
+        }, 5000);
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -13,13 +26,14 @@ const Form = () => {
                 publicKey: "KRsndrC7I83Zt-VF1"
             })
             .then(
-                (response) =>
-                    console.log(
-                        "Message envoyé",
-                        response.status,
-                        response.text
-                    ),
-                (error) => console.log("Échec de l'envoi", error.text)
+                (response) => {
+                    updateMessageStatus("success");
+                    console.log(response.status, response.text);
+                },
+                (error) => {
+                    updateMessageStatus("error");
+                    console.log(error.text);
+                }
             );
     };
 
@@ -51,6 +65,16 @@ const Form = () => {
                 value="Envoyer"
                 className={styles.form__submit}
             />
+            {messageStatus && (
+                <div
+                    role="status"
+                    className={`${styles.form__status} ${
+                        styles[`form__status--${messageStatus}`]
+                    }`}
+                >
+                    {statusMessages[messageStatus]}
+                </div>
+            )}
         </form>
     );
 };
