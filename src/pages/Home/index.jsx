@@ -17,60 +17,53 @@ const Home = () => {
 
     return (
         <section className={styles.home}>
-            <div className={styles.home__top}>
-                <div className={styles.home__introduction}>
-                    <h2 className={styles.home__title}>Répondre aux besoins</h2>
-                    <p className={styles.home__text}>
-                        En tant que Développeur Web, je transforme vos idées en
-                        solutions techniques afin de répondre à vos besoins et à
-                        ceux de vos utilisateurs.
-                    </p>
-                </div>
-                <Card
-                    {...projects[0]}
-                    color="#8c686f"
-                    title="Voir un projet"
-                    subtitle={
+            <div className={styles.home__introduction}>
+                <h2 className={styles.home__title}>Répondre aux besoins</h2>
+                <p className={styles.home__text}>
+                    En tant que Développeur Web, je transforme vos idées en
+                    solutions techniques afin de répondre à vos besoins et à
+                    ceux de vos utilisateurs.
+                </p>
+            </div>
+            <Card
+                {...projects[0]}
+                color="#8c686f"
+                title="Voir un projet"
+                subtitle={
+                    <>
+                        {projects[0].title}
+                        <br />
+                        {projects[0].subtitle}
+                    </>
+                }
+                tags={["Front-end", "React"]}
+            />
+            <Card
+                color="#6f8c68"
+                title="Formation"
+                subtitle="Développeur Web OpenClassrooms"
+                tags={["Titre RNCP", "Niveau 5"]}
+            />
+            <Link
+                to="/david-hores-portfolio/competences"
+                className={styles.home__skill}
+            >
+                <Skill
+                    link
+                    color="#ddd"
+                    mern
+                    title={
                         <>
-                            {projects[0].title}
-                            <br />
-                            {projects[0].subtitle}
+                            <i style={{ color: mernTools[0].color }}>M</i>
+                            <i style={{ color: mernTools[1].color }}>E</i>
+                            <i style={{ color: mernTools[2].color }}>R</i>
+                            <i style={{ color: mernTools[3].color }}>N</i> Stack
                         </>
                     }
-                    tags={["Front-end", "React"]}
+                    tools={mernTools}
+                    background="#fbfbfb"
                 />
-            </div>
-            <div className={styles.home__bottom}>
-                <Card
-                    color="#6f8c68"
-                    title="Formation"
-                    subtitle="Développeur Web OpenClassrooms"
-                    tags={["Titre RNCP", "Niveau 5"]}
-                />
-                <Link
-                    to="/david-hores-portfolio/competences"
-                    className={styles.home__skill}
-                >
-                    <Skill
-                        link
-                        color="#ddd"
-                        mern
-                        title={
-                            <>
-                                <i style={{ color: mernTools[0].color }}>M</i>
-                                <i style={{ color: mernTools[1].color }}>E</i>
-                                <i style={{ color: mernTools[2].color }}>R</i>
-                                <i style={{ color: mernTools[3].color }}>
-                                    N
-                                </i>{" "}
-                                Stack
-                            </>
-                        }
-                        tools={mernTools}
-                        background="#fbfbfb"
-                    />
-                </Link>
-            </div>
+            </Link>
         </section>
     );
 };

@@ -3,26 +3,20 @@
 @use "../../styles/_variables";
 
 .home {
-    @include mixins.grid(auto, 1fr 1.2fr);
+    @include mixins.grid(1.36fr 1fr 1fr 1.6fr, 1fr 1.2fr);
 
     @media (max-width: variables.$breakpoint-small) {
-        grid-template-rows: auto;
-    }
-
-    &__top {
-        @include mixins.grid(2.4fr 1fr, auto);
-
-        @media (max-width: variables.$breakpoint-small) {
-            grid-template-columns: auto;
-        }
+        @include mixins.grid(repeat(2, 1fr), auto);
     }
 
     &__introduction {
+        grid-column: span 3;
         align-self: center;
         margin-right: 20px;
         overflow: hidden;
 
         @media (max-width: variables.$breakpoint-small) {
+            grid-column: span 2;
             margin-right: 0;
         }
     }
@@ -48,16 +42,13 @@
         }
     }
 
-    &__bottom {
-        @include mixins.grid(1fr 3fr, auto);
+    &__skill {
+        grid-column: span 3;
+        @include mixins.card-style(0);
 
         @media (max-width: variables.$breakpoint-small) {
-            grid-template-columns: auto;
+            grid-column: span 2;
         }
-    }
-
-    &__skill {
-        @include mixins.card-style(0);
 
         &:hover {
             @include mixins.card-transition;
