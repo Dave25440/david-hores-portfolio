@@ -12,6 +12,12 @@
     @include mixins.card-style(5px);
     @include mixins.column-flexbox(space-between);
 
+    @media (max-width: variables.$breakpoint-small) {
+        justify-self: center;
+        max-width: 220px;
+        min-height: 200px;
+    }
+
     &--animated:hover {
         @include mixins.card-transition;
     }
@@ -21,11 +27,22 @@
         border-radius: 5px 5px 0 0;
         padding: 10px 15px;
         @include mixins.text-style(variables.$color-content, 2rem, 500);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1.75rem;
+            padding: 10px;
+        }
     }
 
     &__subtitle {
         margin-top: 15px;
         padding: 0 15px;
         @include mixins.text-style(variables.$color-background, 1.25rem, 400);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1rem;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
     }
 }
