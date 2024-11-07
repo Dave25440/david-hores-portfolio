@@ -1,7 +1,12 @@
 @use "../../styles/_mixins";
+@use "../../styles/_variables";
 
 .main {
     &__grid {
         @include mixins.grid(1fr 2.4fr, auto);
+
+        @media (max-width: variables.$breakpoint-small) {
+            grid-template-columns: auto;
+        }
     }
 }
