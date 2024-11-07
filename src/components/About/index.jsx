@@ -9,7 +9,13 @@ import photo from "../../assets/david_hores.webp";
 const About = ({
     color,
     project,
-    title = "Je suis David, Développeur Web",
+    title = (
+        <>
+            Je suis David,
+            <br />
+            Développeur Web
+        </>
+    ),
     subtitle,
     tags,
     links,

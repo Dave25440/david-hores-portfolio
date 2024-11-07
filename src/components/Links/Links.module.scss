@@ -14,14 +14,26 @@
         transition: all 0.3s;
         @include mixins.text-style(variables.$color-content, 1rem, 400);
 
+        @media (max-width: variables.$breakpoint-small) {
+            margin: 10px 0 14px 15px;
+        }
+
         &:hover {
             color: variables.$color-primary;
             margin-left: 30px;
+
+            @media (max-width: variables.$breakpoint-small) {
+                margin-left: 25px;
+            }
         }
     }
 
     &__icon {
         color: variables.$color-primary;
         margin-right: 30px;
+
+        @media (max-width: variables.$breakpoint-small) {
+            margin-right: 25px;
+        }
     }
 }
