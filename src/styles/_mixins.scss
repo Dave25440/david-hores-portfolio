@@ -1,3 +1,5 @@
+@use "./variables";
+
 @mixin card-style($padding) {
     text-decoration: none;
     border-radius: 10px;
@@ -35,6 +37,10 @@
     grid-template-columns: $columns;
     grid-template-rows: $rows;
     gap: 40px;
+
+    @media (max-width: variables.$breakpoint-small) {
+        gap: 30px;
+    }
 }
 
 @mixin list-style {
