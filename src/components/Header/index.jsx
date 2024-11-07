@@ -20,7 +20,7 @@ const Header = () => {
                     David Horès
                 </Link>
             </h1>
-            <nav>
+            <nav className={styles.header__nav}>
                 <ul className={styles.header__list}>
                     <li>
                         <Link
