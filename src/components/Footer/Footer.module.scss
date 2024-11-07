@@ -8,6 +8,11 @@
     margin: 30px 0 50px 0;
     overflow: hidden;
 
+    @media (max-width: variables.$breakpoint-small) {
+        justify-content: center;
+        margin: 30px 0;
+    }
+
     &__text {
         animation: slideToLeft 0.4s ease-out;
         @include mixins.text-style(variables.$color-content, 0.75rem, 400);

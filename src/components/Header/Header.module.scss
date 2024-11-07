@@ -29,7 +29,7 @@
         @include mixins.text-style(variables.$color-content, 4.5rem, 400);
 
         @media (max-width: variables.$breakpoint-small) {
-            @include mixins.text-style(variables.$color-content, 3rem, 400);
+            font-size: 3rem;
         }
     }
 
@@ -62,7 +62,7 @@
         @include mixins.text-style(variables.$color-content, 1.25rem, 400);
 
         @media (max-width: variables.$breakpoint-small) {
-            @include mixins.text-style(variables.$color-content, 1rem, 400);
+            font-size: 1rem;
         }
 
         &:hover {
