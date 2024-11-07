@@ -10,6 +10,10 @@
 @mixin card-transition {
     transform: translateY(-10px);
     filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4));
+
+    @media (max-width: variables.$breakpoint-small) {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+    }
 }
 
 @mixin block-size($width, $height, $radius) {
