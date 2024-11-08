@@ -51,12 +51,7 @@ const Tool = ({ mern, column, color, logo, title }) => {
                     return Logo?.$$typeof ? (
                         <Logo key={index} className={styles.tool__logo} />
                     ) : (
-                        <FontAwesomeIcon
-                            key={index}
-                            icon={Logo}
-                            size="3x"
-                            fixedWidth
-                        />
+                        <FontAwesomeIcon key={index} icon={Logo} size="3x" />
                     );
                 })}
             </div>
