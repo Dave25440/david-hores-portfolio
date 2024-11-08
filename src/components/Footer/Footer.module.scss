@@ -16,5 +16,9 @@
     &__text {
         animation: slideToLeft 0.4s ease-out;
         @include mixins.text-style(variables.$color-content, 0.75rem, 400);
+
+        @media (max-width: variables.$breakpoint-small) {
+            animation: slideToTop 0.4s ease-out;
+        }
     }
 }
