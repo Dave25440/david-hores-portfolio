@@ -23,7 +23,7 @@
         @include mixins.text-style(variables.$color-content, 2rem, 500);
 
         @media (max-width: variables.$breakpoint-small) {
-            font-size: 1.75rem;
+            font-size: 1.625rem;
             padding: 10px;
         }
     }

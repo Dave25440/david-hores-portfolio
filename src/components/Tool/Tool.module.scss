@@ -5,12 +5,24 @@
     text-align: center;
     @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
+    @media (max-width: variables.$breakpoint-small) {
+        transform: scale(75%);
+    }
+
     &--mern {
         transform: scale(110%);
+
+        @media (max-width: variables.$breakpoint-small) {
+            transform: scale(80%);
+        }
     }
 
     &--column {
         transform: scale(90%);
+
+        @media (max-width: variables.$breakpoint-small) {
+            transform: scale(75%);
+        }
     }
 
     &__logos {
@@ -18,6 +30,11 @@
         justify-content: center;
         gap: 10px;
         margin-bottom: 20px;
+
+        @media (max-width: variables.$breakpoint-small) {
+            gap: 0;
+            margin-bottom: 15px;
+        }
     }
 
     &__logo {
