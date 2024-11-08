@@ -7,6 +7,7 @@ import Links from "../Links";
 import photo from "../../assets/david_hores.webp";
 
 const About = ({
+    className,
     color,
     project,
     title = (
@@ -26,7 +27,7 @@ const About = ({
     const flipCard = () => setIsFlipped((prev) => !prev);
 
     return (
-        <article className={styles.about}>
+        <article className={`${styles.about} ${className}`}>
             <div
                 className={`${styles.about__inner} ${
                     isFlipped && styles["about__inner--flipped"]

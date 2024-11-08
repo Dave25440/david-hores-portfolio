@@ -12,17 +12,22 @@ const paths = [
     "/david-hores-portfolio/formation"
 ];
 
-const pathMatch = (pathname) => paths.includes(pathname.replace(/\/$/, ""));
+const pathMatch = (pathname) => paths.includes(pathname);
 
 const Layout = ({ children }) => {
     const location = useLocation();
-    const isMatch = pathMatch(location.pathname);
+    const pathname = location.pathname.replace(/\/$/, "");
+    const isMatch = pathMatch(pathname);
 
     return (
         <>
             <Header />
             <main className={`${styles.main} ${isMatch && styles.main__grid}`}>
-                {isMatch && <About />}
+                {isMatch && (
+                    <About
+                        className={pathname !== paths[0] && styles.main__about}
+                    />
+                )}
                 {children}
             </main>
             <Footer />

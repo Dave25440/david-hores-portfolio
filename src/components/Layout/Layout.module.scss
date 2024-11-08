@@ -9,4 +9,10 @@
             grid-template-columns: auto;
         }
     }
+
+    &__about {
+        @media (max-width: variables.$breakpoint-small) {
+            order: 2;
+        }
+    }
 }
