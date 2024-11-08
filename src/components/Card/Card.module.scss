@@ -22,9 +22,13 @@
         padding: 10px 15px;
         @include mixins.text-style(variables.$color-content, 2rem, 500);
 
+        @media (max-width: variables.$breakpoint-medium) {
+            font-size: 1.75rem;
+            padding: 10px;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1.625rem;
-            padding: 10px;
         }
     }
 
@@ -32,9 +36,12 @@
         padding: 15px;
         @include mixins.text-style(variables.$color-background, 1.25rem, 400);
 
+        @media (max-width: variables.$breakpoint-medium) {
+            padding: 10px;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1rem;
-            padding: 10px;
         }
     }
 }

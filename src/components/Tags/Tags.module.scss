@@ -8,7 +8,7 @@
     margin: 5px 15px 10px 15px;
     @include mixins.list-style;
 
-    @media (max-width: variables.$breakpoint-small) {
+    @media (max-width: variables.$breakpoint-medium) {
         margin: 5px 10px 7.5px 10px;
     }
 
@@ -18,7 +18,7 @@
         padding: 5px 10px;
         @include mixins.text-style(variables.$color-content, 1rem, 400);
 
-        @media (max-width: variables.$breakpoint-small) {
+        @media (max-width: variables.$breakpoint-medium) {
             padding: 5px 7.5px;
         }
     }
