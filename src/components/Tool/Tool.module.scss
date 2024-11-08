@@ -6,14 +6,15 @@
     @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
     @media (max-width: variables.$breakpoint-small) {
-        transform: scale(75%);
+        font-size: 1rem;
+        transform: scale(85%);
     }
 
     &--mern {
         transform: scale(110%);
 
         @media (max-width: variables.$breakpoint-small) {
-            transform: scale(80%);
+            transform: scale(90%);
         }
     }
 
@@ -21,7 +22,7 @@
         transform: scale(90%);
 
         @media (max-width: variables.$breakpoint-small) {
-            transform: scale(75%);
+            transform: scale(85%);
         }
     }
 
@@ -40,5 +41,9 @@
     &__logo {
         fill: currentColor;
         height: 54px;
+
+        @media (max-width: variables.$breakpoint-small) {
+            height: 48px;
+        }
     }
 }
