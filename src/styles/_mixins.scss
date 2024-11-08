@@ -43,7 +43,7 @@
     grid-template-rows: $rows;
     gap: 40px;
 
-    @media (max-width: variables.$breakpoint-small) {
+    @media (max-width: variables.$breakpoint-medium) {
         gap: 30px;
     }
 }

@@ -12,6 +12,11 @@ body {
     margin: auto;
     padding: 0 100px;
 
+    @media (max-width: variables.$breakpoint-medium) {
+        max-width: calc(variables.$breakpoint-medium - 60px);
+        padding: 0 30px;
+    }
+
     @media (max-width: variables.$breakpoint-small) {
         max-width: 400px;
         padding: 0 20px;
