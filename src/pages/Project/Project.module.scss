@@ -5,19 +5,35 @@
 .project {
     @include mixins.grid(1fr 1.3fr 1fr, auto);
 
+    @media (max-width: variables.$breakpoint-small) {
+        grid-template-columns: auto;
+    }
+
     &__left {
         @include mixins.grid(auto, 1fr 1.4fr);
+
+        @media (max-width: variables.$breakpoint-small) {
+            grid-template-rows: auto;
+        }
     }
 
     &__introduction {
         align-self: center;
         margin-right: 20px;
         overflow: hidden;
+
+        @media (max-width: variables.$breakpoint-small) {
+            margin-right: 0;
+        }
     }
 
     &__title {
         animation: slideToRight 0.4s ease-out;
         @include mixins.text-style(variables.$color-content, 2.25rem, 500);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1.75rem;
+        }
     }
 
     &__text {
@@ -25,5 +41,10 @@
         margin-top: 30px;
         animation: slideToRight 0.6s ease-out;
         @include mixins.text-style(variables.$color-content, 1.125rem, 400);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1rem;
+            margin-top: 15px;
+        }
     }
 }

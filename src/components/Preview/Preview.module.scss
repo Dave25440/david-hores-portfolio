@@ -9,6 +9,10 @@
     animation: zoomIn 0.4s;
     @include mixins.card-style(0);
 
+    @media (max-width: variables.$breakpoint-small) {
+        height: 547px;
+    }
+
     &--animated:hover {
         @include mixins.card-transition;
     }
@@ -21,13 +25,16 @@
     }
 
     &__dialog {
-        max-width: 1400px;
         border: 0;
         border-radius: 10px;
         margin: auto;
         padding: 0;
-        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.4);
         animation: fadeIn 0.4s ease;
+
+        @media (max-width: variables.$breakpoint-small) {
+            margin: 20px auto;
+        }
 
         &::backdrop {
             background: transparent;
@@ -48,6 +55,11 @@
             10px 20px
         );
         @include mixins.text-style(variables.$color-background, 1.25rem, 400);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1rem;
+            padding: 10px 15px;
+        }
 
         &:hover {
             right: 10px;
