@@ -1,8 +1,8 @@
 import styles from "./Tags.module.scss";
 
-const Tags = ({ tags, color }) => {
+const Tags = ({ about, tags, color }) => {
     return (
-        <ul className={styles.tags}>
+        <ul className={`${styles.tags} ${about && styles["tags--about"]}`}>
             {tags.map((tag, index) => (
                 <li
                     key={index}

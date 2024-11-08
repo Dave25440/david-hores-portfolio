@@ -59,7 +59,7 @@ const About = ({
                                     {subtitle}
                                 </h3>
                             </div>
-                            <Tags tags={tags} color={color} />
+                            <Tags about tags={tags} color={color} />
                         </div>
                     ) : (
                         <>

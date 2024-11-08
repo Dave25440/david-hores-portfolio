@@ -12,6 +12,14 @@
         margin: 5px 10px 7.5px 10px;
     }
 
+    &--about {
+        margin-left: 20px;
+
+        @media (max-width: variables.$breakpoint-medium) {
+            margin-left: 15px;
+        }
+    }
+
     &__tag {
         background-color: variables.$color-background;
         border-radius: 5px;

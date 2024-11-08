@@ -29,6 +29,7 @@
         align-items: flex-start;
         position: absolute;
         backface-visibility: hidden;
+        overflow: auto;
         @include mixins.block-size(100%, 100%, 10px);
     }
 
@@ -58,7 +59,7 @@
             padding-bottom: 20px;
             @include mixins.column-flexbox(space-between);
 
-            @media (max-width: variables.$breakpoint-small) {
+            @media (max-width: variables.$breakpoint-medium) {
                 padding-bottom: 10px;
             }
         }
@@ -74,9 +75,12 @@
         );
         @include mixins.text-style(variables.$color-primary, 1.25rem, 400);
 
+        @media (max-width: variables.$breakpoint-medium) {
+            padding: 10px 15px;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1.125rem;
-            padding: 10px 15px;
         }
 
         &:hover {
@@ -92,7 +96,7 @@
     &__icon {
         margin-left: 10px;
 
-        @media (max-width: variables.$breakpoint-small) {
+        @media (max-width: variables.$breakpoint-medium) {
             margin-left: 7.5px;
         }
     }
@@ -114,7 +118,7 @@
     &__section {
         margin-top: 30px;
 
-        @media (max-width: variables.$breakpoint-small) {
+        @media (max-width: variables.$breakpoint-medium) {
             margin-top: 15px;
         }
     }
@@ -124,19 +128,25 @@
         padding: 0 20px;
         @include mixins.text-style(variables.$color-background, 2.25rem, 500);
 
-        @media (max-width: variables.$breakpoint-small) {
-            font-size: 2rem;
+        @media (max-width: variables.$breakpoint-medium) {
             margin-top: 15px;
             padding: 0 15px;
+        }
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 2rem;
         }
 
         &--project {
             padding: 0 20px;
             @include mixins.text-style(variables.$color-background, 3rem, 500);
 
+            @media (max-width: variables.$breakpoint-medium) {
+                padding: 0 15px;
+            }
+
             @media (max-width: variables.$breakpoint-small) {
                 font-size: 2.25rem;
-                padding: 0 15px;
             }
         }
     }
@@ -146,9 +156,12 @@
         padding: 0 20px;
         @include mixins.text-style(variables.$color-background, 1.5rem, 400);
 
+        @media (max-width: variables.$breakpoint-medium) {
+            padding: 0 15px;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1.25rem;
-            padding: 0 15px;
         }
     }
 
@@ -156,6 +169,10 @@
         text-align: justify;
         margin: 30px 20px;
         @include mixins.text-style(variables.$color-background, 1.125rem, 400);
+
+        @media (max-width: variables.$breakpoint-medium) {
+            margin: 30px 15px 15px 15px;
+        }
 
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1rem;
