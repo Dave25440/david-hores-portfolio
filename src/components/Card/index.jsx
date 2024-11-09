@@ -10,12 +10,13 @@ const Card = ({ id, color, title, subtitle, tags }) => {
         const card = cardRef.current;
 
         if (card) {
-            const cardAnimated = () => {
-                card.classList.add(styles["card--animated"]);
-                card.removeEventListener("animationend", cardAnimated);
-            };
-
-            card.addEventListener("animationend", cardAnimated);
+            card.addEventListener(
+                "animationend",
+                () => {
+                    card.classList.add(styles["card--animated"]);
+                },
+                { once: true }
+            );
         }
     }, []);
 
