@@ -1,6 +1,6 @@
 [
     {
-        "id": "p5-kasa",
+        "id": "5-projet-kasa",
         "title": "Kasa",
         "subtitle": "Location d'appartements entre particuliers",
         "color": "#ff6060",
@@ -36,19 +36,13 @@
         "picture": "openclassrooms_projet_kasa_accueil.webp"
     },
     {
-        "id": "p4-nina-carducci",
+        "id": "4-projet-nina-carducci",
         "title": "Nina Carducci",
         "subtitle": "Site vitrine de photographe",
         "color": "#e5975f",
         "back": "#a06942",
         "background": "#fcf4ef",
-        "tags": [
-            "Optimisation",
-            "Accessibilité",
-            "SEO",
-            "HTML et CSS",
-            "jQuery"
-        ],
+        "tags": ["Débug", "Optimisation", "HTML et CSS", "jQuery"],
         "links": [
             {
                 "title": "Démo du site",
@@ -77,7 +71,7 @@
         "picture": "openclassrooms_projet_carducci_accueil.webp"
     },
     {
-        "id": "p2-booki",
+        "id": "2-projet-booki",
         "title": "Booki",
         "subtitle": "Hébergements et activités en ville ou en pleine nature",
         "color": "#0065fc",
@@ -112,7 +106,7 @@
         "picture": "openclassrooms_projet_booki_accueil.webp"
     },
     {
-        "id": "p6-mon-vieux-grimoire",
+        "id": "6-projet-mon-vieux-grimoire",
         "title": "Mon Vieux Grimoire",
         "subtitle": "Référencement et notation de livres",
         "color": "#796157",
@@ -143,7 +137,7 @@
         "picture": "openclassrooms_projet_grimoire_accueil.webp"
     },
     {
-        "id": "p3-sophie-bluel",
+        "id": "3-projet-sophie-bluel",
         "title": "Sophie Bluel",
         "subtitle": "Site portfolio d'architecte d'intérieur",
         "color": "#1d6154",
@@ -173,13 +167,13 @@
         "picture": "openclassrooms_projet_bluel_accueil.webp"
     },
     {
-        "id": "p7-menu-maker-by-qwenta",
+        "id": "7-projet-menu-maker-by-qwenta",
         "title": "Menu Maker by Qwenta",
         "subtitle": "Affichage et mise en page de menus pour restaurateurs",
         "color": "#8bc7b1",
         "back": "#618b7b",
         "background": "#f3f9f7",
-        "tags": ["Scrum", "Notion"],
+        "tags": ["Agile", "Notion"],
         "links": [
             {
                 "title": "Spécifications techniques",
