@@ -25,11 +25,13 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Démarrer un projet React et développer l’ensemble de l’application (composants et routes) en suivant les maquettes Figma responsives",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Initialiser une application avec Create React App",
+            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React",
+            "Mettre en œuvre des animations CSS",
+            "Développer une interface web avec Sass"
         ],
         "picture": "openclassrooms_projet_kasa_accueil.webp"
     },
@@ -65,11 +67,12 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Débugger et optimiser un site : améliorer les performances, le SEO et l'accessibilité, mettre en place le référencement local, ajouter les metas pour les réseaux sociaux et fournir un rapport d’optimisation",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Optimiser les performances d’un site web",
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Rédiger un cahier de recette pour tester un site",
+            "Augmenter son trafic grâce au référencement naturel (SEO)"
         ],
         "picture": "openclassrooms_projet_carducci_accueil.webp"
     },
@@ -99,11 +102,12 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Créer la page d'accueil d'une agence de voyage avec HTML et CSS en intégrant les maquettes desktop, tablette et mobile",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Implémenter une interface responsive avec HTML et CSS",
+            "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+            "Versionner son projet avec Git et GitHub",
+            "Installer un environnement de développement front-end"
         ],
         "picture": "openclassrooms_projet_booki_accueil.webp"
     },
@@ -128,11 +132,13 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Développer le back-end d'un site de notation de livres avec Node.js, Express et MongoDB en pratiquant le Green Coding",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Implémenter un modèle logique de données conformément à la réglementation",
+            "Mettre en œuvre des opérations CRUD de manière sécurisée",
+            "Stocker des données de manière sécurisée",
+            "Créer une API REST avec Node.js, Express et MongoDB",
+            "Gérer des fichiers utilisateur sur une application Express"
         ],
         "picture": "openclassrooms_projet_grimoire_accueil.webp"
     },
@@ -157,11 +163,12 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Créer une page web dynamique avec JavaScript : développer la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et la modale permettant d'ajouter et supprimer des médias",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Gérer les évènements utilisateurs avec JavaScript",
+            "Manipuler les éléments du DOM avec JavaScript",
+            "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
+            "Interagir avec un service web à l’aide d’une API HTTP"
         ],
         "picture": "openclassrooms_projet_bluel_accueil.webp"
     },
@@ -191,11 +198,13 @@
             }
         ],
         "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description": "Préparer et planifier le développement d'un site : développer un système de veille, réaliser le document de spécifications techniques et un tableau Kanban",
         "skills": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "Découper une fonctionnalité en tâches pour préparer le développement",
+            "Mettre en place une méthode de veille technologique",
+            "Présenter la solution technique",
+            "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+            "Suivre le déroulement du projet grâce à un outil de gestion de projet"
         ],
         "picture": "openclassrooms_projet_qwenta_accueil.webp"
     }
