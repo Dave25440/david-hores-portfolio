@@ -4,7 +4,11 @@
 .projects {
     @include mixins.grid(repeat(3, 1fr), repeat(2, 1fr));
 
+    @media (max-width: variables.$breakpoint-medium) {
+        grid-template-rows: auto;
+    }
+
     @media (max-width: variables.$breakpoint-small) {
-        @include mixins.grid(repeat(2, 1fr), auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
