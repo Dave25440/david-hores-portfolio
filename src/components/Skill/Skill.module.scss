@@ -53,22 +53,21 @@
     }
 
     &__skills {
+        gap: 15px;
+        list-style: none;
+        text-align: justify;
         height: 100%;
         border-radius: 0 0 5px 5px;
-        @include mixins.column-flexbox(space-around);
-        @include mixins.list-style;
-        @include mixins.text-style(variables.$color-content, 1.125rem, 400);
-
-        @media (max-width: variables.$breakpoint-small) {
-            font-size: 1rem;
-        }
-    }
-
-    &__skill {
         padding: 15px;
+        @include mixins.column-flexbox(space-between);
+        @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
         @media (max-width: variables.$breakpoint-medium) {
             padding: 10px;
+        }
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1rem;
         }
     }
 }

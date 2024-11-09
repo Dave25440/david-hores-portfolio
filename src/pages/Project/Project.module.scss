@@ -10,11 +10,7 @@
     }
 
     &__left {
-        @include mixins.grid(auto, 1fr 1.4fr);
-
-        @media (max-width: variables.$breakpoint-small) {
-            grid-template-rows: auto;
-        }
+        @include mixins.grid(auto, auto);
     }
 
     &__introduction {
