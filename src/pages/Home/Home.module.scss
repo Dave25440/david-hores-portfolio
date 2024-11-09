@@ -3,10 +3,14 @@
 @use "../../styles/_variables";
 
 .home {
-    @include mixins.grid(1.36fr 1fr 1fr 1.6fr, 1fr 1.2fr);
+    @include mixins.grid(1.4fr 1fr 1fr 1.8fr, 1fr 1.2fr);
+
+    @media (max-width: variables.$breakpoint-medium) {
+        @include mixins.grid(1.7fr 1fr 1fr 2.1fr, auto);
+    }
 
     @media (max-width: variables.$breakpoint-small) {
-        @include mixins.grid(repeat(2, 1fr), auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     &__introduction {
@@ -15,9 +19,12 @@
         margin-right: 20px;
         overflow: hidden;
 
+        @media (max-width: variables.$breakpoint-medium) {
+            margin-right: 0;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             grid-column: span 2;
-            margin-right: 0;
         }
     }
 
