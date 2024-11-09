@@ -16,6 +16,11 @@
         padding: 10px 15px 15px 15px;
         @include mixins.text-style(variables.$color-background, 2rem, 500);
 
+        @media (max-width: variables.$breakpoint-medium) {
+            font-size: 1.75rem;
+            padding: 10px 10px 15px 10px;
+        }
+
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1.625rem;
             padding: 5px 10px 10px 10px;
@@ -62,7 +67,7 @@
     &__skill {
         padding: 15px;
 
-        @media (max-width: variables.$breakpoint-small) {
+        @media (max-width: variables.$breakpoint-medium) {
             padding: 10px;
         }
     }

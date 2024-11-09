@@ -11,10 +11,14 @@
     @include mixins.column-flexbox(flex-start);
     @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
+    @media (max-width: variables.$breakpoint-medium) {
+        width: 55%;
+        animation: slideToLeft 0.6s ease;
+    }
+
     @media (max-width: variables.$breakpoint-small) {
         font-size: 1rem;
         width: calc(100% - 8px);
-
         animation: slideToRight 0.6s ease;
     }
 
