@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Career.module.scss";
 
 const Career = () => {
@@ -48,7 +50,12 @@ const Career = () => {
                             href="https://openclassrooms.com/fr/paths/899-developpeur-web"
                             className={styles.career__link}
                         >
-                            Développeur Web
+                            Développeur Web{" "}
+                            <FontAwesomeIcon
+                                icon={faArrowUpRightFromSquare}
+                                size="xs"
+                                fixedWidth
+                            />
                         </a>
                     </strong>{" "}
                     - OpenClassrooms, Paris (distanciel)
@@ -60,7 +67,12 @@ const Career = () => {
                         href="https://www.francecompetences.fr/recherche/rncp/38145/"
                         className={styles.career__link}
                     >
-                        Développeur informatique
+                        Développeur informatique{" "}
+                        <FontAwesomeIcon
+                            icon={faArrowUpRightFromSquare}
+                            size="xs"
+                            fixedWidth
+                        />
                     </a>
                 </li>
                 <li>2018</li>

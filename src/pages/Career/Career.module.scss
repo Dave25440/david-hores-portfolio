@@ -55,6 +55,7 @@
 
     &__link {
         color: variables.$color-content;
+        text-decoration: none;
         white-space: nowrap;
         transition: all 0.3s;
 
