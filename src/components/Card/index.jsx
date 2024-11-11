@@ -25,7 +25,7 @@ const Card = ({ id, color, title, subtitle, tags }) => {
             to={
                 id
                     ? `/david-hores-portfolio/realisations/${id}`
-                    : `/david-hores-portfolio/formation`
+                    : `/david-hores-portfolio/parcours`
             }
             className={styles.card}
             style={{ backgroundColor: color }}

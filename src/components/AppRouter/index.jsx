@@ -31,7 +31,7 @@ const AppRouter = () => {
                         element={<Project />}
                     />
                     <Route
-                        path="/david-hores-portfolio/formation"
+                        path="/david-hores-portfolio/parcours"
                         element={<Career />}
                     />
                     <Route path="*" element={<Error />} />

@@ -9,7 +9,7 @@ const paths = [
     "/david-hores-portfolio/realisations",
     "/david-hores-portfolio/competences",
     "/david-hores-portfolio/contact",
-    "/david-hores-portfolio/formation"
+    "/david-hores-portfolio/parcours"
 ];
 
 const pathMatch = (pathname) => paths.includes(pathname);

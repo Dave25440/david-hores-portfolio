@@ -3,12 +3,12 @@ import styles from "./Career.module.scss";
 
 const Career = () => {
     useEffect(() => {
-        document.title = "David Horès, Développeur Web - Formation";
+        document.title = "David Horès, Développeur Web - Parcours";
     }, []);
 
     return (
         <section className={styles.career}>
-            <h2 className={styles.career__title}>Formation</h2>
+            <h2 className={styles.career__title}>Parcours</h2>
             <p className={styles.career__text}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                 sed luctus lacus. Etiam porta consequat nulla, vel aliquet quam
