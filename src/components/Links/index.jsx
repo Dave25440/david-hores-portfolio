@@ -8,6 +8,13 @@ import {
     faTableList
 } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Links.module.scss";
+import qwentaSpecs from "../../assets/openclassrooms_projet_qwenta_specifications_techniques.pdf";
+import qwentaPresentation from "../../assets/openclassrooms_projet_qwenta_presentation.pdf";
+
+const url = {
+    qwentaSpecs,
+    qwentaPresentation
+};
 
 const icon = {
     linkedin: faLinkedin,
@@ -46,7 +53,7 @@ const Links = ({
                     <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={link.url}
+                        href={url[link.url] || link.url}
                         className={styles.links__link}
                         onMouseEnter={(e) =>
                             (e.currentTarget.style.color = color)

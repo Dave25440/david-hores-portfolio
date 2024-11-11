@@ -177,7 +177,7 @@
         "links": [
             {
                 "title": "Spécifications techniques",
-                "url": "../oc_p7_qwenta_specifications_techniques.pdf",
+                "url": "qwentaSpecs",
                 "icon": "pdf"
             },
             {
@@ -187,7 +187,7 @@
             },
             {
                 "title": "Présentation du projet",
-                "url": "../oc_p7_qwenta_presentation.pdf",
+                "url": "qwentaPresentation",
                 "icon": "pdf"
             }
         ],
