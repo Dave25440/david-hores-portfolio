@@ -31,7 +31,7 @@ const Home = () => {
                 title="Voir un projet"
                 subtitle={
                     <>
-                        {projects[0].title}
+                        <i style={{ fontWeight: 600 }}>{projects[0].title}</i>
                         <br />
                         {projects[0].subtitle}
                     </>

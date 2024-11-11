@@ -3,7 +3,7 @@
 @use "../../styles/_variables";
 
 .home {
-    @include mixins.grid(1.4fr 1fr 1fr 1.8fr, 1fr 1.2fr);
+    @include mixins.grid(1.5fr 1fr 1fr 1.9fr, 1fr 1.2fr);
 
     @media (max-width: variables.$breakpoint-medium) {
         @include mixins.grid(1.7fr 1fr 1fr 2.1fr, auto);
