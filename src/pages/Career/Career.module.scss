@@ -14,15 +14,53 @@
         }
     }
 
-    &__text {
-        animation: slideToRight 0.6s ease;
-        text-align: justify;
-        margin-top: 30px;
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        gap: 15px;
+        animation: slideToTop 0.6s ease;
+        @include mixins.list-style;
         @include mixins.text-style(variables.$color-content, 1.125rem, 400);
 
         @media (max-width: variables.$breakpoint-small) {
             font-size: 1rem;
-            margin-top: 15px;
+            animation: slideToRight 0.6s ease;
+        }
+
+        &--title {
+            grid-column: span 2;
+            margin-top: 30px;
+
+            @media (max-width: variables.$breakpoint-small) {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &__subtitle {
+        background-color: variables.$color-tertiary;
+        border-radius: 10px;
+        padding: 10px 20px;
+        @include mixins.text-style(variables.$color-background, 1.25rem, 400);
+
+        @media (max-width: variables.$breakpoint-small) {
+            font-size: 1.125rem;
+            padding: 10px 15px;
+        }
+
+        &--secondary {
+            background-color: variables.$color-secondary;
+        }
+    }
+
+    &__link {
+        color: variables.$color-content;
+        white-space: nowrap;
+        transition: all 0.3s;
+
+        &:hover {
+            color: variables.$color-secondary;
+            margin-left: 10px;
         }
     }
 }
