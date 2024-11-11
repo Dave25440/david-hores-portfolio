@@ -21,7 +21,10 @@ const About = ({
     tags,
     links,
     back,
-    summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus lacus. Etiam porta consequat nulla, vel aliquet quam pulvinar sed. Proin justo massa, ultrices in augue quis, viverra varius purus. Etiam non commodo dolor. Aliquam hendrerit porttitor est vitae gravida. Vestibulum urna libero, placerat a tellus eget, maximus commodo quam. Morbi non justo odio. Suspendisse egestas tincidunt libero, vitae maximus mauris vestibulum vitae."
+    details = [
+        "Titulaire d’un DUT Services et Réseaux de Communication, je me passionne pour les nouvelles technologies depuis mon adolescence. Lycéen, je crée déjà mes premiers sites web. Diplômé en 2010, je saisis l'opportunité de rentrer dans la vie active en travaillant comme Journaliste Reporter d'Images pour la télévision locale TV Cristal.",
+        "Ce métier n'étant pas une vocation, j'entame les démarches d'une reconversion professionnelle en 2023 afin de renouer avec ma passion initiale : le développement web. Une reconversion concrétisée l'année suivante avec OpenClassrooms."
+    ]
 }) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const flipCard = () => setIsFlipped((prev) => !prev);
@@ -106,9 +109,13 @@ const About = ({
                     </button>
                     <section className={styles.about__section}>
                         <h2 className={styles.about__title}>
-                            {project ? "Enjeux" : "À propos"}
+                            {project ? "Enjeux" : "Retour aux sources"}
                         </h2>
-                        <p className={styles.about__text}>{summary}</p>
+                        <ul className={styles.about__list}>
+                            {details.map((detail, index) => (
+                                <li key={index}>{detail}</li>
+                            ))}
+                        </ul>
                     </section>
                 </div>
             </div>

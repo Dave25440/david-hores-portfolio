@@ -46,8 +46,13 @@
 
     &__top {
         background-color: variables.$color-primary-light;
+        margin-bottom: 30px;
         @include mixins.block-size(100%, 40%, 10px 10px 50% 50%);
         @include mixins.column-flexbox(flex-start);
+
+        @media (max-width: variables.$breakpoint-medium) {
+            margin-bottom: 15px;
+        }
 
         &--project {
             background: linear-gradient(
@@ -124,12 +129,10 @@
     }
 
     &__title {
-        margin-top: 30px;
         padding: 0 20px;
         @include mixins.text-style(variables.$color-background, 2.25rem, 500);
 
         @media (max-width: variables.$breakpoint-medium) {
-            margin-top: 15px;
             padding: 0 15px;
         }
 
@@ -165,9 +168,12 @@
         }
     }
 
-    &__text {
+    &__list {
+        gap: 15px;
         text-align: justify;
         margin: 30px 20px;
+        @include mixins.column-flexbox(flex-start);
+        @include mixins.list-style;
         @include mixins.text-style(variables.$color-background, 1.125rem, 400);
 
         @media (max-width: variables.$breakpoint-medium) {
