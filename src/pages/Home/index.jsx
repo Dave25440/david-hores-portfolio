@@ -41,7 +41,15 @@ const Home = () => {
             <Card
                 color="#6f8c68"
                 title="Formation"
-                subtitle="Développeur Web OpenClassrooms"
+                subtitle={
+                    <>
+                        <strong style={{ fontWeight: 600 }}>
+                            Développeur Web
+                        </strong>
+                        <br />
+                        OpenClassrooms
+                    </>
+                }
                 tags={["Titre RNCP", "Niveau 5"]}
             />
             <Link

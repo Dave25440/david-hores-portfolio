@@ -43,21 +43,19 @@ const Career = () => {
                 </li>
                 <li>2024</li>
                 <li>
-                    <strong>
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://openclassrooms.com/fr/paths/899-developpeur-web"
-                            className={styles.career__link}
-                        >
-                            Développeur Web{" "}
-                            <FontAwesomeIcon
-                                icon={faArrowUpRightFromSquare}
-                                size="xs"
-                                fixedWidth
-                            />
-                        </a>
-                    </strong>{" "}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://openclassrooms.com/fr/paths/899-developpeur-web"
+                        className={styles.career__link}
+                    >
+                        <strong>Développeur Web</strong>{" "}
+                        <FontAwesomeIcon
+                            icon={faArrowUpRightFromSquare}
+                            size="xs"
+                            fixedWidth
+                        />
+                    </a>{" "}
                     - OpenClassrooms, Paris (distanciel)
                     <br />
                     Certification professionnelle :{" "}
