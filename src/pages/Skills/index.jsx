@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Skills.module.scss";
-import toolCategories from "../../data/toolCategories.json";
 import tools from "../../data/tools.json";
+import toolCategories from "../../data/toolCategories.json";
 import Skill from "../../components/Skill";
 
 const categoryTools = (category) =>

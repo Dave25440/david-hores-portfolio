@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
-import projects from "../../data/projects.json";
 import tools from "../../data/tools.json";
+import projects from "../../data/projects.json";
 import Card from "../../components/Card";
 import Skill from "../../components/Skill";
 
