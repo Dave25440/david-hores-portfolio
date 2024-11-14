@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/david-hores-portfolio/static/css/main.f87b3643.css",
-    "main.js": "/david-hores-portfolio/static/js/main.e34ed375.js",
+    "main.css": "/david-hores-portfolio/static/css/main.6a1fe2ef.css",
+    "main.js": "/david-hores-portfolio/static/js/main.c8c20d02.js",
     "static/media/openclassrooms_projet_qwenta_presentation.pdf": "/david-hores-portfolio/static/media/openclassrooms_projet_qwenta_presentation.f318f70d6f00fbe7f3a7.pdf",
     "static/media/openclassrooms_projet_carducci_accueil_large.webp": "/david-hores-portfolio/static/media/openclassrooms_projet_carducci_accueil_large.3804b84e800c6581cc5c.webp",
     "static/media/openclassrooms_projet_kasa_accueil_large.webp": "/david-hores-portfolio/static/media/openclassrooms_projet_kasa_accueil_large.b30e66b9976802987d4e.webp",
@@ -21,11 +21,11 @@
     "index.html": "/david-hores-portfolio/index.html",
     "static/media/mongodb.svg": "/david-hores-portfolio/static/media/mongodb.ae2edf3f65b69a02469e3f7c27759806.svg",
     "static/media/express.svg": "/david-hores-portfolio/static/media/express.ab6ec06e862da387491f4459acf5b22b.svg",
-    "main.f87b3643.css.map": "/david-hores-portfolio/static/css/main.f87b3643.css.map",
-    "main.e34ed375.js.map": "/david-hores-portfolio/static/js/main.e34ed375.js.map"
+    "main.6a1fe2ef.css.map": "/david-hores-portfolio/static/css/main.6a1fe2ef.css.map",
+    "main.c8c20d02.js.map": "/david-hores-portfolio/static/js/main.c8c20d02.js.map"
   },
   "entrypoints": [
-    "static/css/main.f87b3643.css",
-    "static/js/main.e34ed375.js"
+    "static/css/main.6a1fe2ef.css",
+    "static/js/main.c8c20d02.js"
   ]
 }
