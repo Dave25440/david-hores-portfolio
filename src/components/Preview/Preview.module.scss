@@ -18,7 +18,9 @@
     }
 
     &__img {
-        display: block;
+        display: flex;
+        max-width: 100%;
+        max-height: 100%;
         object-fit: cover;
         object-position: left top;
         @include mixins.block-size(100%, 100%, 10px);

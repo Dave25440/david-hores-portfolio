@@ -43,6 +43,7 @@ const Preview = ({ picture, title, subtitle, color }) => {
             dialog.showModal();
             dialog.scrollTop = 0;
             dialog.focus();
+            document.body.style.overflow = "hidden";
         }
     };
 
@@ -56,6 +57,7 @@ const Preview = ({ picture, title, subtitle, color }) => {
                 () => {
                     dialog.classList.remove(styles.preview__dialog__close);
                     dialog.close();
+                    document.body.style.overflow = "";
                 },
                 { once: true }
             );
