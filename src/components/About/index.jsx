@@ -22,7 +22,7 @@ const About = ({
     links,
     back,
     details = [
-        "Titulaire d’un DUT Services et Réseaux de Communication, je me passionne pour les nouvelles technologies depuis mon adolescence. Lycéen, je crée déjà mes premiers sites web. Diplômé en 2010, je saisis l'opportunité de rentrer dans la vie active en travaillant comme Journaliste Reporter d'Images pour la télévision locale TV Cristal.",
+        "Titulaire d’un DUT Services et Réseaux de Communication, je me passionne pour les nouvelles technologies depuis mon adolescence. Lycéen, je crée déjà mes premiers sites web. Diplômé en 2010, je saisis l'opportunité d'entrer dans la vie active en travaillant comme Journaliste Reporter d'Images pour la télévision locale TV Cristal.",
         "Ce métier n'étant pas une vocation, j'entame les démarches d'une reconversion professionnelle en 2023 afin de renouer avec ma passion initiale : le développement web. Une reconversion concrétisée l'année suivante avec OpenClassrooms."
     ]
 }) => {

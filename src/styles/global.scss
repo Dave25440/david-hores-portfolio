@@ -21,4 +21,8 @@ body {
         max-width: 400px;
         padding: 0 20px;
     }
+
+    &:has(dialog[open]) {
+        overflow: hidden;
+    }
 }
