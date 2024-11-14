@@ -24,7 +24,12 @@
                 "icon": "canva"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Navigation : gestion des paramètres des routes dans l'URL avec React Router, une page par route, renvoi de la page 404 en cas de route inexistante ou d'id incorrect, système de routage réuni dans un seul fichier",
+            "Interface : découpage en composants modulaires et réutilisables, un composant par fichier, structure logique des fichiers, utilisation des props entre les composants et du state, gestion des évènements, itération sur les listes avec map",
+            "Styling : animation du menu déroulant, respect de la syntaxe SCSS et de la convention de nommage BEM",
+            "Pas de librairie React externe ni d'erreur ou warning dans la console"
+        ],
         "description": "Démarrer un projet React et développer l’ensemble de l’application (composants et routes) en suivant les maquettes Figma responsives",
         "skills": [
             "Initialiser une application avec Create React App",
@@ -60,7 +65,13 @@
                 "icon": "canva"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Listage des optimisations à réaliser",
+            "Performances : redimensionnement et compression des images, création d'images responsives, minification des fichiers CSS et JavaScript, respect des normes W3C",
+            "Débug : changement d'état du filtre dans le portfolio et navigation dans la modale entre images précédente et suivante",
+            "SEO : insertion de mots-clés, ajout de données structurées Schema.org, de la meta OpenGraph et de la Twitter Card",
+            "Accessibilité : mise en place des balises sémantiques, respect des seuils minimaux de contraste des couleurs, gestion de la navigation au clavier"
+        ],
         "description": "Débugger et optimiser un site : améliorer les performances, le SEO et l'accessibilité, mettre en place le référencement local, ajouter les metas pour les réseaux sociaux et fournir un rapport d’optimisation",
         "skills": [
             "Optimiser les performances d’un site web",
@@ -95,7 +106,11 @@
                 "icon": "canva"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Structure : identification des éléments de la page, définition des balises HTML et découpage de la maquette",
+            "Intégration : desktop first, utilisation des media queries pour les versions tablette et mobile, respect de la mise en page des maquettes, utilisation de flexbox, des balises sémantiques et des classes CSS avec une convention de nommage et sans duplication, validation des codes HTML et CSS avec W3C, test de la page web sur Google Chrome et Mozilla Firefox, aucun framework ou préprocesseur CSS ni autre langage",
+            "Découverte des outils et méthodologies de travail du développeur web"
+        ],
         "description": "Créer la page d'accueil d'une agence de voyage avec HTML et CSS en intégrant les maquettes desktop, tablette et mobile",
         "skills": [
             "Implémenter une interface responsive avec HTML et CSS",
@@ -125,7 +140,12 @@
                 "icon": "canva"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Fonctionnalités : consultation, création, modification, suppression et notation des livres, inscription et connexion avec un email unique et un mot de passe",
+            "Structure : connexion de la base de données NoSQL à l'application et création des modèles avec Mongoose, mise en place des routeurs, contrôleurs et middlewares",
+            "Sécurité : cryptage du mot de passe avec bcrypt, création, envoi et vérification du token d'authentification avec JWT, renvoi des erreurs liées au back-end sans ajout",
+            "Optimisation : vérification et traitement des fichiers entrants avec Multer et sharp, suppression des images inutilisées"
+        ],
         "description": "Développer le back-end d'un site de notation de livres avec Node.js, Express et MongoDB en pratiquant le Green Coding",
         "skills": [
             "Implémenter un modèle logique de données conformément à la réglementation",
@@ -156,7 +176,12 @@
                 "icon": "canva"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Test de l'API avec la documentation Swagger",
+            "Intégration : récupération des données de l'API avec fetch, génération dynamique de la galerie de travaux et des filtres, création des formulaires de connexion et de gestion de la galerie, mise à jour dynamique du DOM sans recharge de la page, rendu fidèle à la maquette, respect des normes W3C",
+            "Interactivité : filtre des travaux par catégorie, gestion des règles et erreurs des formulaires et de l'accessibilité de la modale, envoi des données à l'API, récupération et utilisation du token, test des fonctionnalités",
+            "Découverte des outils et fonctionnalités de JavaScript"
+        ],
         "description": "Créer une page web dynamique avec JavaScript : développer la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et la modale permettant d'ajouter et supprimer des médias",
         "skills": [
             "Gérer les évènements utilisateurs avec JavaScript",
@@ -191,7 +216,11 @@
                 "icon": "pdf"
             }
         ],
-        "details": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        "details": [
+            "Veille : répartition de flux pertinents dans deux axes de curation avec Feedly, recherche de sources d'informations pour chaque axe",
+            "Besoins techniques : définition des besoins fonctionnels, de leurs solutions techniques et des liens avec le back-end, proposition de solutions d'hébergement, recommandations en termes d'accessibilité, de sécurité, de maintenance et de mises à jour",
+            "Kanban : récupération du Product Backlog, révision des tickets dans un Sprint Backlog avec Notion, attribution des tâches, estimation de leur complexité en Story Points, définition de leurs critères d'acceptation et spécifications techniques"
+        ],
         "description": "Préparer et planifier le développement d'un site : développer un système de veille, réaliser le document de spécifications techniques et un tableau Kanban",
         "skills": [
             "Découper une fonctionnalité en tâches pour préparer le développement",
