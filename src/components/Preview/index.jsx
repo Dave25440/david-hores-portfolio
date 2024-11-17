@@ -118,7 +118,7 @@ const Preview = ({ picture, title, subtitle, color }) => {
                     width="1400"
                     height="100%"
                     loading="lazy"
-                    className={styles.preview__img}
+                    className={styles.preview__model}
                     onClick={(e) => {
                         e.stopPropagation();
                     }}
