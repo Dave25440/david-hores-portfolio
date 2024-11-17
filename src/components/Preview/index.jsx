@@ -116,7 +116,6 @@ const Preview = ({ picture, title, subtitle, color }) => {
                     src={largeImage || src}
                     alt={`${title} : ${subtitle}`}
                     width="1400"
-                    height="100%"
                     loading="lazy"
                     className={styles.preview__model}
                     onClick={(e) => {
